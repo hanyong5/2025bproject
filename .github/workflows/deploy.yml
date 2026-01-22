@@ -34,7 +34,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
-            docker pull ${{ steps.login-ecr.outputs.registry }}/big-project:latest || true
-            docker stop big-project || true
-            docker rm big-project || true
-            docker run -d --name big-project -p 8000:8000 ${{ steps.login-ecr.outputs.registry }}/big-project:latest
+            sudo docker pull ${{ steps.login-ecr.outputs.registry }}/big-project:latest || true
+            sudo docker stop big-project || true
+            sudo docker rm big-project || true
+            sudo docker run -d --name big-project -p 8000:8000 ${{ steps.login-ecr.outputs.registry }}/big-project:latest
