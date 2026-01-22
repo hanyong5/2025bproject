@@ -1,0 +1,40 @@
+name: Deploy To EC2
+on:
+  push:
+  branches:
+    - main
+
+jobs:
+  deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Github Repository 파일 불러오기
+      uses: actions/checkout@v2
+    - name: AWS REsoreces 설정
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-northeast-2
+    - name: ECR 로그인
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v2
+
+    - name: Docker 이미지 빌드 및 푸시
+      run: docker build -t bicproject .
+    - name: Docker 이미지 태그 설정
+      run: docker tag bicproject:latest  ${{ steps.login-ecr.outputs.registry }}/big-project:latest
+
+    - name: Docker 이미지 푸시
+      run: docker push ${{ steps.login-ecr.outputs.registry }}/big-project:latest
+    - name: EC2에 배포
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ubuntu
+        key: ${{ secrets.EC2_PRIVATE_KEY}}
+        script: |
+          docker pull ${{ steps.login-ecr.outputs.registry }}/big-project:latest || true
+          docker stop big-project || true
+          docker rm big-project || true
+          docker run -d --name big-project -p 8000:8000 ${{ steps.login-ecr.outputs.registry }}/big-project:latest
