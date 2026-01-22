@@ -25,14 +25,14 @@ jobs:
       - name: Docker 이미지 태그 설정
         run: docker tag big-project:latest  ${{ steps.login-ecr.outputs.registry }}/big-project:latest
 
-      - name: Docker 이미지 푸시
+      - name: Docker 이미지 푸시합니다.
         run: docker push ${{ steps.login-ecr.outputs.registry }}/big-project:latest
       - name: EC2에 배포
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
-          key: ${{ secrets.EC2_PRIVATE_KEY}}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
             docker pull ${{ steps.login-ecr.outputs.registry }}/big-project:latest || true
             docker stop big-project || true
