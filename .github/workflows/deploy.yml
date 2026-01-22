@@ -20,7 +20,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Docker 이미지 빌드 및 푸시
+      - name: Docker 이미지 빌드 및 푸시 설정
         run: docker build -t big-project .
       - name: Docker 이미지 태그 설정
         run: docker tag big-project:latest  ${{ steps.login-ecr.outputs.registry }}/big-project:latest
