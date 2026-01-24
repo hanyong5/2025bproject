@@ -1,275 +1,227 @@
+"""
+해외시장 지수 크롤링 API
+실행 시 자동으로 해외시장 지수를 수집하여 날짜별 JSON 파일로 저장합니다.
+"""
+
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
-from typing import List, Optional
-from statistics import mean
+from typing import Optional
+from datetime import datetime
+import json
+import os
+from crawlers.market_crawler import crawler
 
 # FastAPI 앱 인스턴스 생성
 app = FastAPI(
-    title="학생 점수 관리 API",
-    description="학생들의 점수를 관리하는 FastAPI 샘플 애플리케이션",
+    title="해외시장 지수 크롤링 API",
+    description="해외 주요 시장 지수를 실시간으로 조회하고 수집하는 API",
     version="1.0.0"
 )
 
-# 초기 점수 데이터
-score = [
-    ['정약용', 85, 90, 80, 75],
-    ['이순신', 78, 82, 90, 88],
-    ['이율곡', 92, 85, 87, 95],
-    ['홍길동', 80, 76, 70, 82],
-    ['신사임당', 95, 98, 94, 99],
-    ['최무선', 73, 70, 78, 80],
-    ['장영실', 88, 89, 85, 92],
-    ['김유신', 77, 75, 73, 70],
-    ['안중근', 84, 83, 80, 79],
-    ['세종대왕', 99, 97, 98, 96]
-]
-# 각 항목: [이름, 국어, 영어, 수학, 과학]
+
+# ========================================
+# 데이터 저장 함수
+# ========================================
+
+def save_market_data_to_json():
+    """해외시장 지수 데이터를 날짜별 JSON 파일로 저장"""
+    try:
+        # data 폴더가 없으면 생성
+        os.makedirs('data', exist_ok=True)
+
+        # 현재 날짜로 파일명 생성
+        today = datetime.now().strftime('%Y-%m-%d')
+        filename = f'data/global_point_{today}.json'
+
+        # 시장 데이터 수집
+        print("📊 해외시장 지수 데이터 수집 중...")
+        market_data = crawler.get_market_summary()
+
+        # JSON 파일로 저장
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(market_data, f, ensure_ascii=False, indent=2)
+
+        print(f"✅ 해외시장 지수 데이터 저장 완료: {filename}")
+        return filename
+
+    except Exception as e:
+        print(f"❌ 데이터 저장 실패: {e}")
+        return None
 
 
-# Pydantic 모델 정의
-class ScoreInput(BaseModel):
-    """점수 입력 모델"""
-    name: str = Field(..., description="학생 이름", example="홍길동")
-    korean: int = Field(..., ge=0, le=100, description="국어 점수", example=85)
-    english: int = Field(..., ge=0, le=100, description="영어 점수", example=90)
-    math: int = Field(..., ge=0, le=100, description="수학 점수", example=80)
-    science: int = Field(..., ge=0, le=100, description="과학 점수", example=75)
+# ========================================
+# FastAPI 이벤트 핸들러
+# ========================================
+
+@app.on_event("startup")
+async def startup_event():
+    """서버 시작 시 자동으로 해외시장 지수 데이터 수집 및 저장"""
+    print("\n" + "="*60)
+    print("🚀 해외시장 지수 크롤링 API 서버 시작")
+    print("="*60)
+    save_market_data_to_json()
+    print("="*60)
+    print("✅ 서버 준비 완료!")
+    print("📖 API 문서: http://localhost:8000/docs")
+    print("="*60 + "\n")
 
 
-class ScoreResponse(BaseModel):
-    """점수 응답 모델"""
-    name: str = Field(..., description="학생 이름")
-    korean: int = Field(..., description="국어 점수")
-    english: int = Field(..., description="영어 점수")
-    math: int = Field(..., description="수학 점수")
-    science: int = Field(..., description="과학 점수")
-    total: int = Field(..., description="총점")
-    average: float = Field(..., description="평균 점수")
-
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "name": "정약용",
-                "korean": 85,
-                "english": 90,
-                "math": 80,
-                "science": 75,
-                "total": 330,
-                "average": 82.5
-            }
-        }
-
-
-class StatisticsResponse(BaseModel):
-    """통계 응답 모델"""
-    total_students: int = Field(..., description="전체 학생 수")
-    average_korean: float = Field(..., description="국어 평균")
-    average_english: float = Field(..., description="영어 평균")
-    average_math: float = Field(..., description="수학 평균")
-    average_science: float = Field(..., description="과학 평균")
-    overall_average: float = Field(..., description="전체 평균")
-    top_student: str = Field(..., description="최고 점수 학생")
-
-
-# 데이터를 딕셔너리 형태로 변환하는 헬퍼 함수
-def convert_to_dict(score_list: List) -> dict:
-    """점수 리스트를 딕셔너리로 변환"""
-    return {
-        "name": score_list[0],
-        "korean": score_list[1],
-        "english": score_list[2],
-        "math": score_list[3],
-        "science": score_list[4]
-    }
-
-
-def calculate_scores(score_dict: dict) -> dict:
-    """총점과 평균을 계산하여 응답 모델 생성"""
-    total = score_dict["korean"] + score_dict["english"] + score_dict["math"] + score_dict["science"]
-    average = round(total / 4, 2)
-    
-    return {
-        **score_dict,
-        "total": total,
-        "average": average
-    }
-
-
+# ========================================
 # API 엔드포인트
+# ========================================
 
 @app.get("/", tags=["기본"])
 async def root():
     """루트 엔드포인트 - API 정보"""
     return {
-        "message": "학생 점수 관리 API에 오신 것을 환영합니다!",
+        "title": "해외시장 지수 크롤링 API",
+        "version": "1.0.0",
+        "description": "해외 주요 시장 지수를 실시간으로 조회하고 수집합니다.",
         "docs": "/docs",
         "endpoints": {
-            "전체 학생 목록": "/students",
-            "학생 조회": "/students/{name}",
-            "통계 정보": "/statistics"
+            "전체 지수 조회": "GET /market/indices",
+            "지역별 지수 조회": "GET /market/indices?region={us|asia|europe}",
+            "특정 지수 조회": "GET /market/index/{symbol}",
+            "시장 요약": "GET /market/summary",
+            "데이터 수집 및 저장": "POST /market/collect"
+        },
+        "supported_indices": {
+            "미국": ["dow", "sp500", "nasdaq"],
+            "아시아": ["nikkei", "hangseng", "shanghai", "shenzhen"],
+            "유럽": ["stoxx50", "ftse", "dax"]
         }
     }
 
 
-@app.get("/students", response_model=List[ScoreResponse], tags=["학생 관리"])
-async def get_all_students():
+@app.get("/market/indices", tags=["해외시장 지수"])
+async def get_market_indices(region: Optional[str] = None):
     """
-    전체 학생 목록과 점수를 조회합니다.
-    
-    - **name**: 학생 이름
-    - **korean**: 국어 점수
-    - **english**: 영어 점수
-    - **math**: 수학 점수
-    - **science**: 과학 점수
-    - **total**: 총점
-    - **average**: 평균 점수
-    """
-    result = []
-    for student_score in score:
-        score_dict = convert_to_dict(student_score)
-        result.append(calculate_scores(score_dict))
-    
-    return result
+    해외시장 지수를 조회합니다.
 
+    - **region**: 지역 필터 (us, asia, europe) - 생략 시 전체 조회
 
-@app.get("/students/{name}", response_model=ScoreResponse, tags=["학생 관리"])
-async def get_student(name: str):
+    **지원 지수:**
+    - 미국: 다우존스, S&P 500, 나스닥
+    - 아시아: 닛케이225, 항셍, 상해종합, 심천성분
+    - 유럽: STOXX 50, FTSE 100, DAX
     """
-    특정 학생의 점수를 조회합니다.
-    
-    - **name**: 조회할 학생 이름
-    """
-    for student_score in score:
-        if student_score[0] == name:
-            score_dict = convert_to_dict(student_score)
-            return calculate_scores(score_dict)
-    
-    raise HTTPException(status_code=404, detail=f"학생 '{name}'을(를) 찾을 수 없습니다.")
-
-
-@app.get("/statistics", response_model=StatisticsResponse, tags=["통계"])
-async def get_statistics():
-    """
-    전체 학생들의 점수 통계를 조회합니다.
-    
-    - **total_students**: 전체 학생 수
-    - **average_korean**: 국어 평균 점수
-    - **average_english**: 영어 평균 점수
-    - **average_math**: 수학 평균 점수
-    - **average_science**: 과학 평균 점수
-    - **overall_average**: 전체 과목 평균
-    - **top_student**: 최고 점수 학생
-    """
-    if not score:
-        raise HTTPException(status_code=404, detail="점수 데이터가 없습니다.")
-    
-    # 각 과목별 점수 리스트 추출
-    korean_scores = [s[1] for s in score]
-    english_scores = [s[2] for s in score]
-    math_scores = [s[3] for s in score]
-    science_scores = [s[4] for s in score]
-    
-    # 평균 계산
-    avg_korean = round(mean(korean_scores), 2)
-    avg_english = round(mean(english_scores), 2)
-    avg_math = round(mean(math_scores), 2)
-    avg_science = round(mean(science_scores), 2)
-    overall_avg = round(mean([avg_korean, avg_english, avg_math, avg_science]), 2)
-    
-    # 최고 점수 학생 찾기
-    student_totals = []
-    for student_score in score:
-        total = sum(student_score[1:])
-        student_totals.append((student_score[0], total))
-    
-    top_student = max(student_totals, key=lambda x: x[1])[0]
-    
-    return {
-        "total_students": len(score),
-        "average_korean": avg_korean,
-        "average_english": avg_english,
-        "average_math": avg_math,
-        "average_science": avg_science,
-        "overall_average": overall_avg,
-        "top_student": top_student
-    }
-
-
-@app.post("/students", response_model=ScoreResponse, tags=["학생 관리"])
-async def create_student(score_input: ScoreInput):
-    """
-    새로운 학생의 점수를 추가합니다.
-    
-    - **name**: 학생 이름
-    - **korean**: 국어 점수 (0-100)
-    - **english**: 영어 점수 (0-100)
-    - **math**: 수학 점수 (0-100)
-    - **science**: 과학 점수 (0-100)
-    """
-    # 중복 체크
-    for student_score in score:
-        if student_score[0] == score_input.name:
+    try:
+        if region and region not in ['us', 'asia', 'europe']:
             raise HTTPException(
-                status_code=400, 
-                detail=f"학생 '{score_input.name}'은(는) 이미 존재합니다."
+                status_code=400,
+                detail="region은 'us', 'asia', 'europe' 중 하나여야 합니다."
             )
-    
-    # 새 학생 추가
-    new_student = [
-        score_input.name,
-        score_input.korean,
-        score_input.english,
-        score_input.math,
-        score_input.science
-    ]
-    score.append(new_student)
-    
-    score_dict = convert_to_dict(new_student)
-    return calculate_scores(score_dict)
+
+        indices = crawler.get_all_indices(region)
+
+        if not indices:
+            raise HTTPException(
+                status_code=503,
+                detail="지수 데이터를 가져올 수 없습니다. 잠시 후 다시 시도해주세요."
+            )
+
+        return {
+            "region": region or "all",
+            "count": len(indices),
+            "indices": indices,
+            "timestamp": datetime.now().isoformat()
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"서버 오류: {str(e)}")
 
 
-@app.put("/students/{name}", response_model=ScoreResponse, tags=["학생 관리"])
-async def update_student(name: str, score_input: ScoreInput):
+@app.get("/market/index/{symbol}", tags=["해외시장 지수"])
+async def get_market_index(symbol: str):
     """
-    기존 학생의 점수를 수정합니다.
-    
-    - **name**: 수정할 학생 이름
-    - **score_input**: 새로운 점수 정보
+    특정 해외시장 지수를 조회합니다.
+
+    - **symbol**: 지수 심볼
+
+    **지원되는 심볼:**
+    - dow: 다우존스
+    - sp500: S&P 500
+    - nasdaq: 나스닥
+    - nikkei: 닛케이225
+    - hangseng: 항셍
+    - shanghai: 상해종합
+    - shenzhen: 심천성분
+    - stoxx50: STOXX 50
+    - ftse: FTSE 100
+    - dax: DAX
     """
-    for i, student_score in enumerate(score):
-        if student_score[0] == name:
-            # 점수 업데이트
-            score[i] = [
-                score_input.name,
-                score_input.korean,
-                score_input.english,
-                score_input.math,
-                score_input.science
-            ]
-            score_dict = convert_to_dict(score[i])
-            return calculate_scores(score_dict)
-    
-    raise HTTPException(status_code=404, detail=f"학생 '{name}'을(를) 찾을 수 없습니다.")
+    try:
+        data = crawler.get_index_data(symbol)
+
+        if not data:
+            raise HTTPException(
+                status_code=404,
+                detail=f"지수 '{symbol}'을(를) 찾을 수 없습니다. 지원되는 심볼: dow, sp500, nasdaq, nikkei, hangseng, shanghai, shenzhen, stoxx50, ftse, dax"
+            )
+
+        return data
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"서버 오류: {str(e)}")
 
 
-@app.delete("/students/{name}", tags=["학생 관리"])
-async def delete_student(name: str):
+@app.get("/market/summary", tags=["해외시장 지수"])
+async def get_market_summary():
     """
-    학생을 삭제합니다.
-    
-    - **name**: 삭제할 학생 이름
+    전체 시장 요약 정보를 조회합니다.
+
+    미국, 아시아, 유럽 주요 지수를 한번에 조회할 수 있습니다.
     """
-    for i, student_score in enumerate(score):
-        if student_score[0] == name:
-            deleted_student = score.pop(i)
+    try:
+        summary = crawler.get_market_summary()
+
+        if summary['total_count'] == 0:
+            raise HTTPException(
+                status_code=503,
+                detail="시장 데이터를 가져올 수 없습니다. 잠시 후 다시 시도해주세요."
+            )
+
+        return summary
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"서버 오류: {str(e)}")
+
+
+@app.post("/market/collect", tags=["해외시장 지수"])
+async def collect_market_data():
+    """
+    해외시장 지수 데이터를 수집하여 날짜별 JSON 파일로 저장합니다.
+
+    파일은 data/global_point_YYYY-MM-DD.json 형식으로 저장됩니다.
+    """
+    try:
+        filename = save_market_data_to_json()
+
+        if filename:
             return {
-                "message": f"학생 '{name}'이(가) 삭제되었습니다.",
-                "deleted_student": convert_to_dict(deleted_student)
+                "status": "success",
+                "message": "해외시장 지수 데이터 수집 및 저장 완료",
+                "filename": filename,
+                "timestamp": datetime.now().isoformat()
             }
-    
-    raise HTTPException(status_code=404, detail=f"학생 '{name}'을(를) 찾을 수 없습니다.")
+        else:
+            raise HTTPException(
+                status_code=500,
+                detail="데이터 수집 및 저장 실패"
+            )
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"서버 오류: {str(e)}")
 
 
 if __name__ == "__main__":
     import uvicorn
+    print("\n🌍 해외시장 지수 크롤링 서버를 시작합니다...")
     uvicorn.run(app, host="0.0.0.0", port=8000)

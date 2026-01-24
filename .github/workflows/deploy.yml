@@ -1,40 +1,52 @@
-name: Deploy To EC2
+name: 해외시장 지수 자동 수집
 on:
   push:
     branches:
       - main
+  schedule:
+    # 매일 한국 시간 오전 9시 (UTC 0시)에 자동 실행
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    # 수동 실행 가능
 
 jobs:
-  deploy:
+  collect-market-data:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Github Repository 파일 불러오기
-        uses: actions/checkout@v2
-      - name: AWS REsoreces 설정
-        uses: aws-actions/configure-aws-credentials@v4
+      - name: Python 환경 설정
+        uses: actions/setup-python@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-2
-      - name: ECR 로그인
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v2
+          python-version: "3.10"
+          cache: "pip"
 
-      - name: Docker 이미지 빌드 및 푸시 설정
-        run: docker build -t big-project .
-      - name: Docker 이미지 태그 설정
-        run: docker tag big-project:latest  ${{ steps.login-ecr.outputs.registry }}/big-project:latest
+      - name: 패키지 설치
+        run: |
+          pip install --upgrade pip
+          pip install fastapi pandas requests beautifulsoup4 lxml python-dateutil
 
-      - name: Docker 이미지 푸시합니다.
-        run: docker push ${{ steps.login-ecr.outputs.registry }}/big-project:latest
-      - name: EC2에 배포
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
-          key: ${{ secrets.EC2_PRIVATE_KEY }}
-          script: |
-            sudo docker pull ${{ steps.login-ecr.outputs.registry }}/big-project:latest || true
-            sudo docker stop big-project || true
-            sudo docker rm big-project || true
-            sudo docker run -d --name big-project -p 8000:8000 ${{ steps.login-ecr.outputs.registry }}/big-project:latest
+      - name: 해외시장 지수 데이터 수집
+        run: |
+          collect_monthly_data.py
+
+      - name: 수집된 파일 확인
+        run: |
+          echo "📁 data 폴더 내용:"
+          ls -lh data/
+
+      - name: Git 설정
+        run: |
+          git config --global user.name "hanyong5"
+          git config --global user.email "hanyong5@naver.com"
+
+      - name: 변경사항 커밋 및 푸시
+        run: |
+          git add data/
+          if git diff --staged --quiet; then
+            echo "변경사항이 없습니다."
+          else
+            CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
+            git commit -m "📊 해외시장 지수 데이터 수집: ${CURRENT_DATE}"
+            git push
+            echo "✅ 데이터가 성공적으로 커밋되고 푸시되었습니다."
+          fi

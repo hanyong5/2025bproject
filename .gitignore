@@ -1,0 +1,38 @@
+# Python 가상환경
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 환경 변수
+.env
+.venv
+venv/
+ENV/
+
+# 테스트
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git (자기 자신 제외)
+.git/
+
+# data 폴더는 추적합니다 (JSON 파일 저장용)
+# data/
