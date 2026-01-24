@@ -12,12 +12,15 @@ on:
 jobs:
   collect-market-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Python 환경 설정
         uses: actions/setup-python@v4

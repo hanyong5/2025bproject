@@ -18,7 +18,7 @@ def collect_monthly_data_to_single_file():
     try:
         # data 폴더가 없으면 생성
         os.makedirs('data', exist_ok=True)
-        print("✅ data 폴더 확인 완료")
+        print("[OK] data 폴더 확인 완료")
 
         # 오늘 날짜
         today = datetime.now()
@@ -26,8 +26,8 @@ def collect_monthly_data_to_single_file():
         # 수집 시작일 (30일 전)
         start_date = today - timedelta(days=30)
 
-        print(f"\n📅 수집 기간: {start_date.strftime('%Y-%m-%d')} ~ {today.strftime('%Y-%m-%d')}")
-        print(f"📦 총 {31}일치 데이터 수집 예정\n")
+        print(f"\n[INFO] 수집 기간: {start_date.strftime('%Y-%m-%d')} ~ {today.strftime('%Y-%m-%d')}")
+        print(f"[INFO] 총 {31}일치 데이터 수집 예정\n")
 
         # 전체 데이터를 담을 리스트
         all_data = []
@@ -39,14 +39,14 @@ def collect_monthly_data_to_single_file():
             current_date = start_date + timedelta(days=i)
             date_str = current_date.strftime('%Y-%m-%d')
 
-            print(f"📥 [{i+1}/31] {date_str} 데이터 수집 중...", end=" ")
+            print(f"[{i+1}/31] {date_str} 데이터 수집 중...", end=" ")
 
             try:
                 # 과거 데이터 수집
                 market_data = crawler.get_historical_market_summary(current_date)
 
                 if market_data['total_count'] == 0:
-                    print(f"❌ 데이터 없음 (주말/휴일)")
+                    print(f"[SKIP] 데이터 없음 (주말/휴일)")
                     fail_count += 1
                     # 빈 데이터도 포함 (날짜 연속성 유지)
                     all_data.append({
@@ -58,7 +58,7 @@ def collect_monthly_data_to_single_file():
                         'total_count': 0
                     })
                 else:
-                    print(f"✅ 수집 완료 ({market_data['total_count']}개 지수)")
+                    print(f"[OK] 수집 완료 ({market_data['total_count']}개 지수)")
                     success_count += 1
                     # 날짜 정보 포함하여 저장
                     all_data.append({
@@ -71,7 +71,7 @@ def collect_monthly_data_to_single_file():
                     })
 
             except Exception as e:
-                print(f"❌ 실패: {e}")
+                print(f"[ERROR] 실패: {e}")
                 fail_count += 1
                 # 에러 발생 시에도 빈 데이터 추가
                 all_data.append({
@@ -108,19 +108,19 @@ def collect_monthly_data_to_single_file():
         print("\n" + "="*60)
         print("[DATA] 수집 결과 요약")
         print("="*60)
-        print(f"✅ 성공: {success_count}일")
-        print(f"❌ 실패/휴일: {fail_count}일")
-        print(f"📁 저장 파일: {filename}")
-        print(f"📦 파일 크기: {file_size:,} bytes ({file_size/1024:.2f} KB)")
+        print(f"[OK] 성공: {success_count}일")
+        print(f"[SKIP] 실패/휴일: {fail_count}일")
+        print(f"[FILE] 저장 파일: {filename}")
+        print(f"[SIZE] 파일 크기: {file_size:,} bytes ({file_size/1024:.2f} KB)")
         print("="*60 + "\n")
 
-        print(f"✅ 한 달간 데이터가 하나의 파일로 저장되었습니다!")
-        print(f"📄 파일명: {filename}")
+        print(f"[OK] 한 달간 데이터가 하나의 파일로 저장되었습니다!")
+        print(f"[FILE] 파일명: {filename}")
 
         return True
 
     except Exception as e:
-        print(f"\n❌ 전체 프로세스 오류 발생: {e}")
+        print(f"\n[ERROR] 전체 프로세스 오류 발생: {e}")
         import traceback
         traceback.print_exc()
         return False
