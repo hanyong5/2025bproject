@@ -32,7 +32,7 @@ jobs:
 
       - name: 해외시장 지수 데이터 수집
         run: |
-          collect_monthly_data.py
+          python collect_monthly_data.py
 
       - name: 수집된 파일 확인
         run: |

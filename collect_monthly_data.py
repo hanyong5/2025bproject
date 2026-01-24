@@ -12,7 +12,7 @@ from crawlers.market_crawler import crawler
 def collect_monthly_data_to_single_file():
     """오늘 이전 30일간의 해외시장 지수 데이터를 하나의 파일로 수집"""
     print("\n" + "="*60)
-    print("📊 한 달간 해외시장 지수 데이터 수집 (단일 파일)")
+    print("[DATA] 한 달간 해외시장 지수 데이터 수집 (단일 파일)")
     print("="*60)
 
     try:
@@ -106,7 +106,7 @@ def collect_monthly_data_to_single_file():
 
         # 결과 요약
         print("\n" + "="*60)
-        print("📊 수집 결과 요약")
+        print("[DATA] 수집 결과 요약")
         print("="*60)
         print(f"✅ 성공: {success_count}일")
         print(f"❌ 실패/휴일: {fail_count}일")
@@ -127,14 +127,14 @@ def collect_monthly_data_to_single_file():
 
 
 if __name__ == "__main__":
-    print("\n🌍 오늘 이전 30일간 해외시장 지수 데이터 수집 (단일 파일)")
-    print("⚠️  이 작업은 시간이 걸릴 수 있습니다 (약 30초~1분)\n")
+    print("\n[INFO] 오늘 이전 30일간 해외시장 지수 데이터 수집 (단일 파일)")
+    print("[WARNING] 이 작업은 시간이 걸릴 수 있습니다 (약 30초~1분)\n")
 
     success = collect_monthly_data_to_single_file()
 
     if not success:
-        print("⚠️  데이터 수집에 실패했습니다.")
+        print("[ERROR] 데이터 수집에 실패했습니다.")
         exit(1)
     else:
-        print("🎉 데이터 수집이 성공적으로 완료되었습니다.")
+        print("[SUCCESS] 데이터 수집이 성공적으로 완료되었습니다.")
         exit(0)
