@@ -1,4 +1,4 @@
-name: 뉴스 크롤링
+name: news collection
 on:
   push:
     branches:
@@ -23,8 +23,8 @@ jobs:
       - name: 저장소 체크아웃
         uses: actions/checkout@v3
         with:
+          fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
 
       - name: Python 환경 설정
         uses: actions/setup-python@v4
@@ -50,15 +50,37 @@ jobs:
         run: |
           git config --global user.name "hanyong5"
           git config --global user.email "hanyong5@naver.com"
+          git config --global init.defaultBranch main
 
       - name: 변경사항 커밋 및 푸시
         run: |
+          # 원격 저장소 정보 가져오기
+          git fetch origin
+          
+          # 현재 브랜치 확인 및 전환
+          git checkout main || git checkout -b main
+          
+          # 충돌 상태 정리 (이전 실행에서 남은 충돌 해결)
+          git reset --hard HEAD || true
+          git clean -fd || true
+          
+          # 원격 브랜치와 동기화 (충돌 시 현재 상태 유지)
+          git pull origin main --rebase --no-edit || git pull origin main --no-edit || echo "Pull 실패, 현재 상태로 진행"
+          
+          # 충돌이 발생한 경우 현재 상태를 기준으로 진행
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "충돌 상태 감지, 현재 상태로 진행"
+            git reset --hard HEAD || true
+          fi
+          
+          # 데이터 파일 추가
           git add data/
+          
           if git diff --staged --quiet; then
             echo "변경사항이 없습니다."
           else
             CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
             git commit -m "📰 뉴스 수집: ${CURRENT_DATE}"
-            git push
+            git push origin main
             echo "✅ 데이터가 성공적으로 커밋되고 푸시되었습니다."
           fi

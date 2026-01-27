@@ -1,4 +1,4 @@
-name: 해외시장 지수 자동 수집
+name: Automated Overseas Market Index Collection
 on:
   push:
     branches:
@@ -8,7 +8,9 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
     # 수동 실행 가능
-
+permissions:
+  contents: write # ← 이게 핵심입니다
+  
 jobs:
   collect-market-data:
     runs-on: ubuntu-latest
@@ -49,14 +51,12 @@ jobs:
 
       - name: 변경사항 커밋 및 푸시
         run: |
-          sudo git add data/
-          if sudo git diff --staged --quiet; then
+          git add data/
+          if git diff --staged --quiet; then
             echo "변경사항이 없습니다."
           else
             CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
-            sudo git commit -m "📊 해외시장 지수 데이터 수집: ${CURRENT_DATE}"
-            # 원격 변경사항을 먼저 가져와서 충돌 방지
-            sudo git pull --rebase origin main || sudo git pull origin main
-            sudo git push origin main
+            git commit -m "📊 해외시장 지수 데이터 수집: ${CURRENT_DATE}"
+            git push
             echo "✅ 데이터가 성공적으로 커밋되고 푸시되었습니다."
           fi

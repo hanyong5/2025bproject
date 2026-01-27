@@ -4,10 +4,11 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse, parse_qs
 import random
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import os
 import hashlib
+import glob
 
 URL = "https://finance.naver.com/news/mainnews.naver"
 
@@ -116,6 +117,85 @@ def is_data_duplicate(new_data, existing_data):
     existing_titles = {item.get("제목", "") for item in existing_news}
     
     return new_titles == existing_titles
+
+# 오늘 날짜의 다음 파일 번호 찾기
+def get_next_file_number(data_dir, date):
+    """오늘 날짜의 기존 파일들을 확인하여 다음 번호 반환"""
+    pattern = os.path.join(data_dir, f"{date}_*.json")
+    existing_files = glob.glob(pattern)
+    
+    if not existing_files:
+        return "01"
+    
+    # 파일명에서 번호 추출
+    numbers = []
+    for filepath in existing_files:
+        filename = os.path.basename(filepath)
+        # YYYY-MM-DD_NN.json 형식에서 NN 추출
+        try:
+            parts = filename.replace('.json', '').split('_')
+            if len(parts) >= 2:
+                num_str = parts[-1]
+                if num_str.isdigit():
+                    numbers.append(int(num_str))
+        except:
+            continue
+    
+    if not numbers:
+        return "01"
+    
+    # 다음 번호 계산
+    next_num = max(numbers) + 1
+    return f"{next_num:02d}"
+
+# 파일명 생성
+def generate_filename(data_dir, date):
+    """날짜와 번호를 포함한 파일명 생성"""
+    file_number = get_next_file_number(data_dir, date)
+    filename = f"{date}_{file_number}.json"
+    return os.path.join(data_dir, filename)
+
+# 5일 이상 지난 파일 삭제
+def delete_old_files(data_dir, days=5):
+    """지정된 일수 이상 지난 파일 삭제"""
+    try:
+        if not os.path.exists(data_dir):
+            return
+        
+        # 현재 날짜
+        today = datetime.now()
+        cutoff_date = today - timedelta(days=days)
+        
+        # data 폴더의 모든 JSON 파일 확인
+        pattern = os.path.join(data_dir, "*.json")
+        files = glob.glob(pattern)
+        
+        deleted_count = 0
+        for filepath in files:
+            try:
+                # 파일명에서 날짜 추출 (YYYY-MM-DD_NN.json 형식)
+                filename = os.path.basename(filepath)
+                date_str = filename.split('_')[0]
+                
+                # 날짜 파싱
+                file_date = datetime.strptime(date_str, '%Y-%m-%d')
+                
+                # 5일 이상 지난 파일 삭제
+                if file_date < cutoff_date:
+                    os.remove(filepath)
+                    deleted_count += 1
+                    print(f"🗑️ 오래된 파일 삭제: {filename}")
+            except Exception as e:
+                # 날짜 파싱 실패 시 스킵
+                continue
+        
+        if deleted_count > 0:
+            print(f"✅ 총 {deleted_count}개의 오래된 파일을 삭제했습니다.")
+        else:
+            print(f"ℹ️ 삭제할 오래된 파일이 없습니다.")
+            
+    except Exception as e:
+        print(f"⚠️ 오래된 파일 삭제 중 오류 발생: {e}")
 
 # .Nnavi를 통해 오늘 날짜의 페이지 개수 파악
 def get_today_page_count(date=None):
@@ -536,23 +616,35 @@ def main():
     
     # 파일 경로 설정
     data_dir = "data"
-    filepath = os.path.join(data_dir, "todaynews.json")
-    
-    # 기존 데이터 로드
-    existing_data = load_existing_data(filepath)
-    
-    # 오늘 날짜의 모든 페이지에서 뉴스 데이터 가져오기
     today_date = get_today_date()
     print(f"📅 날짜: {today_date}")
     
+    # 오래된 파일 삭제 (5일 이상)
+    print("\n🗑️ 오래된 파일 정리 중...")
+    delete_old_files(data_dir, days=5)
+    
+    # 오늘 날짜의 모든 페이지에서 뉴스 데이터 가져오기
     news_list = fetch_all_pages_news(date=today_date)
     
     if news_list:
+        # 오늘 날짜의 모든 파일 확인하여 중복 체크
+        pattern = os.path.join(data_dir, f"{today_date}_*.json")
+        existing_files = sorted(glob.glob(pattern), reverse=True)
+        
+        # 가장 최근 파일과 중복 체크
+        existing_data = None
+        if existing_files:
+            existing_data = load_existing_data(existing_files[0])
+        
         # 중복 체크
-        if is_data_duplicate(news_list, existing_data):
+        if existing_data and is_data_duplicate(news_list, existing_data):
             print(f"ℹ️ 기존 데이터와 동일합니다. 다시 로드하지 않습니다.")
             print(f"📊 기존 데이터: {len(existing_data.get('news', []))}개 뉴스")
             return
+        
+        # 새 파일명 생성 (날짜_번호 형식)
+        filepath = generate_filename(data_dir, today_date)
+        print(f"📝 파일명: {os.path.basename(filepath)}")
         
         # 데이터 저장
         if save_data_to_json(news_list, filepath):
