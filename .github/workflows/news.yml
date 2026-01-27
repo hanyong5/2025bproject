@@ -1,0 +1,64 @@
+name: 뉴스 크롤링
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 매일 한국 시간 자정(00:00)과 오전 8시(08:00)에 자동 실행
+    # UTC 기준: 자정 = 15:00 (전날), 오전 8시 = 23:00 (전날)
+    - cron: "0 15 * * *"  # 한국 시간 자정 (UTC 15:00)
+    - cron: "0 23 * * *"  # 한국 시간 오전 8시 (UTC 23:00)
+  workflow_dispatch:
+    # 수동 실행 가능
+permissions:
+  contents: write
+  
+jobs:
+  collect-news-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Python 환경 설정
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: 패키지 설치
+        run: |
+          pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml
+
+      - name: 뉴스 데이터 수집
+        run: |
+          python newdata.py
+
+      - name: 수집된 파일 확인
+        run: |
+          echo "📁 data 폴더 내용:"
+          ls -lh data/ || echo "data 폴더가 없습니다."
+
+      - name: Git 설정
+        run: |
+          git config --global user.name "hanyong5"
+          git config --global user.email "hanyong5@naver.com"
+
+      - name: 변경사항 커밋 및 푸시
+        run: |
+          git add data/
+          if git diff --staged --quiet; then
+            echo "변경사항이 없습니다."
+          else
+            CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')
+            git commit -m "📰 뉴스 수집: ${CURRENT_DATE}"
+            git push
+            echo "✅ 데이터가 성공적으로 커밋되고 푸시되었습니다."
+          fi
