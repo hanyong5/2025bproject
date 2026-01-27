@@ -1,0 +1,2614 @@
+{
+  "collection_info": {
+    "start_date": "2025-12-27",
+    "end_date": "2026-01-26",
+    "total_days": 31,
+    "success_days": 25,
+    "fail_days": 6,
+    "collected_at": "2026-01-26T08:05:53.890789"
+  },
+  "data": [
+    {
+      "date": "2025-12-27",
+      "has_data": false,
+      "us_market": [],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 0
+    },
+    {
+      "date": "2025-12-28",
+      "has_data": true,
+      "us_market": [],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 50526.92,
+          "previous_close": 50691.22,
+          "change": -164.3,
+          "change_percent": -0.32,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-28T08:05:10.574568",
+          "date": "2025-12-28"
+        }
+      ],
+      "europe_market": [],
+      "total_count": 1
+    },
+    {
+      "date": "2025-12-29",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48461.93,
+          "previous_close": 48636.63,
+          "change": -174.7,
+          "change_percent": -0.36,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6905.74,
+          "previous_close": 6903.6,
+          "change": 2.14,
+          "change_percent": 0.03,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23474.35,
+          "previous_close": 23414.68,
+          "change": 59.67,
+          "change_percent": 0.25,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 50526.92,
+          "previous_close": 50691.22,
+          "change": -164.3,
+          "change_percent": -0.32,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 25635.23,
+          "previous_close": 25928.89,
+          "change": -293.66,
+          "change_percent": -1.13,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 3965.28,
+          "previous_close": 3964.65,
+          "change": 0.63,
+          "change_percent": 0.02,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 13537.1,
+          "previous_close": 13604.29,
+          "change": -67.19,
+          "change_percent": -0.49,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5751.71,
+          "previous_close": 5752.16,
+          "change": -0.45,
+          "change_percent": -0.01,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 9866.5,
+          "previous_close": 9870.7,
+          "change": -4.2,
+          "change_percent": -0.04,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24351.12,
+          "previous_close": 24370.94,
+          "change": -19.82,
+          "change_percent": -0.08,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-29T08:05:10.574568",
+          "date": "2025-12-29"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2025-12-30",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48367.06,
+          "previous_close": 48434.88,
+          "change": -67.82,
+          "change_percent": -0.14,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6896.24,
+          "previous_close": 6900.44,
+          "change": -4.2,
+          "change_percent": -0.06,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23419.08,
+          "previous_close": 23465.67,
+          "change": -46.59,
+          "change_percent": -0.2,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 50339.48,
+          "previous_close": 50312.85,
+          "change": 26.63,
+          "change_percent": 0.05,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 25854.6,
+          "previous_close": 25636.4,
+          "change": 218.2,
+          "change_percent": 0.85,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 3965.12,
+          "previous_close": 3947.87,
+          "change": 17.24,
+          "change_percent": 0.44,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 13604.07,
+          "previous_close": 13466.3,
+          "change": 137.77,
+          "change_percent": 1.02,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5796.22,
+          "previous_close": 5748.97,
+          "change": 47.25,
+          "change_percent": 0.82,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 9940.7,
+          "previous_close": 9866.5,
+          "change": 74.2,
+          "change_percent": 0.75,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24490.41,
+          "previous_close": 24343.19,
+          "change": 147.22,
+          "change_percent": 0.6,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-30T08:05:10.574568",
+          "date": "2025-12-30"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2025-12-31",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48063.29,
+          "previous_close": 48371.52,
+          "change": -308.23,
+          "change_percent": -0.64,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6845.5,
+          "previous_close": 6898.82,
+          "change": -53.32,
+          "change_percent": -0.77,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23241.99,
+          "previous_close": 23420.85,
+          "change": -178.86,
+          "change_percent": -0.76,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 25630.54,
+          "previous_close": 25801.49,
+          "change": -170.95,
+          "change_percent": -0.66,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 3968.84,
+          "previous_close": 3968.73,
+          "change": 0.11,
+          "change_percent": 0.0,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 13525.02,
+          "previous_close": 13627.26,
+          "change": -102.24,
+          "change_percent": -0.75,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 9931.4,
+          "previous_close": 9940.7,
+          "change": -9.3,
+          "change_percent": -0.09,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2025-12-31T08:05:10.574568",
+          "date": "2025-12-31"
+        }
+      ],
+      "total_count": 7
+    },
+    {
+      "date": "2026-01-01",
+      "has_data": false,
+      "us_market": [],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 0
+    },
+    {
+      "date": "2026-01-02",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48382.39,
+          "previous_close": 48105.98,
+          "change": 276.41,
+          "change_percent": 0.57,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-02T08:05:10.574568",
+          "date": "2026-01-02"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6858.47,
+          "previous_close": 6878.11,
+          "change": -19.64,
+          "change_percent": -0.29,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-02T08:05:10.574568",
+          "date": "2026-01-02"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23235.63,
+          "previous_close": 23481.49,
+          "change": -245.86,
+          "change_percent": -1.05,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-02T08:05:10.574568",
+          "date": "2026-01-02"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26338.47,
+          "previous_close": 25717.42,
+          "change": 621.05,
+          "change_percent": 2.41,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-02T08:05:10.574568",
+          "date": "2026-01-02"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 9951.1,
+          "previous_close": 9931.3,
+          "change": 19.8,
+          "change_percent": 0.2,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-02T08:05:10.574568",
+          "date": "2026-01-02"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24539.34,
+          "previous_close": 24499.51,
+          "change": 39.83,
+          "change_percent": 0.16,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-02T08:05:10.574568",
+          "date": "2026-01-02"
+        }
+      ],
+      "total_count": 6
+    },
+    {
+      "date": "2026-01-03",
+      "has_data": false,
+      "us_market": [],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 0
+    },
+    {
+      "date": "2026-01-04",
+      "has_data": true,
+      "us_market": [],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 51832.8,
+          "previous_close": 51010.28,
+          "change": 822.52,
+          "change_percent": 1.61,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-04T08:05:10.574568",
+          "date": "2026-01-04"
+        }
+      ],
+      "europe_market": [],
+      "total_count": 1
+    },
+    {
+      "date": "2026-01-05",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48977.18,
+          "previous_close": 48475.81,
+          "change": 501.37,
+          "change_percent": 1.03,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6902.05,
+          "previous_close": 6892.19,
+          "change": 9.86,
+          "change_percent": 0.14,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23395.82,
+          "previous_close": 23449.67,
+          "change": -53.85,
+          "change_percent": -0.23,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 51832.8,
+          "previous_close": 51010.28,
+          "change": 822.52,
+          "change_percent": 1.61,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26347.24,
+          "previous_close": 26361.44,
+          "change": -14.2,
+          "change_percent": -0.05,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4023.42,
+          "previous_close": 3986.97,
+          "change": 36.45,
+          "change_percent": 0.91,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 13828.63,
+          "previous_close": 13633.63,
+          "change": 195.0,
+          "change_percent": 1.43,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5923.69,
+          "previous_close": 5863.16,
+          "change": 60.53,
+          "change_percent": 1.03,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10004.6,
+          "previous_close": 9951.5,
+          "change": 53.1,
+          "change_percent": 0.53,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24868.69,
+          "previous_close": 24681.35,
+          "change": 187.34,
+          "change_percent": 0.76,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-05T08:05:10.574568",
+          "date": "2026-01-05"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-06",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49462.08,
+          "previous_close": 48987.36,
+          "change": 474.72,
+          "change_percent": 0.97,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6944.82,
+          "previous_close": 6908.03,
+          "change": 36.79,
+          "change_percent": 0.53,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23547.17,
+          "previous_close": 23446.96,
+          "change": 100.21,
+          "change_percent": 0.43,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 52518.08,
+          "previous_close": 52157.22,
+          "change": 360.86,
+          "change_percent": 0.69,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26710.45,
+          "previous_close": 26502.4,
+          "change": 208.05,
+          "change_percent": 0.79,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4083.67,
+          "previous_close": 4026.02,
+          "change": 57.65,
+          "change_percent": 1.43,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14022.55,
+          "previous_close": 13830.3,
+          "change": 192.25,
+          "change_percent": 1.39,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5931.79,
+          "previous_close": 5926.73,
+          "change": 5.06,
+          "change_percent": 0.09,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10122.7,
+          "previous_close": 10004.4,
+          "change": 118.3,
+          "change_percent": 1.18,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24892.2,
+          "previous_close": 24904.68,
+          "change": -12.48,
+          "change_percent": -0.05,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-06T08:05:10.574568",
+          "date": "2026-01-06"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-07",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48996.08,
+          "previous_close": 49512.72,
+          "change": -516.64,
+          "change_percent": -1.04,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6920.93,
+          "previous_close": 6945.07,
+          "change": -24.14,
+          "change_percent": -0.35,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23584.28,
+          "previous_close": 23544.89,
+          "change": 39.39,
+          "change_percent": 0.17,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 51961.98,
+          "previous_close": 52144.64,
+          "change": -182.66,
+          "change_percent": -0.35,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26458.95,
+          "previous_close": 26601.83,
+          "change": -142.88,
+          "change_percent": -0.54,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4085.77,
+          "previous_close": 4083.84,
+          "change": 1.93,
+          "change_percent": 0.05,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14030.56,
+          "previous_close": 14062.02,
+          "change": -31.46,
+          "change_percent": -0.22,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5923.57,
+          "previous_close": 5926.54,
+          "change": -2.97,
+          "change_percent": -0.05,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10048.2,
+          "previous_close": 10122.8,
+          "change": -74.6,
+          "change_percent": -0.74,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25122.26,
+          "previous_close": 24995.0,
+          "change": 127.26,
+          "change_percent": 0.51,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-07T08:05:10.574568",
+          "date": "2026-01-07"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-08",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49266.11,
+          "previous_close": 48850.17,
+          "change": 415.94,
+          "change_percent": 0.85,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6921.46,
+          "previous_close": 6914.11,
+          "change": 7.35,
+          "change_percent": 0.11,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23480.02,
+          "previous_close": 23548.88,
+          "change": -68.86,
+          "change_percent": -0.29,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 51117.26,
+          "previous_close": 51769.83,
+          "change": -652.57,
+          "change_percent": -1.26,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26149.31,
+          "previous_close": 26302.78,
+          "change": -153.47,
+          "change_percent": -0.58,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4082.98,
+          "previous_close": 4077.72,
+          "change": 5.26,
+          "change_percent": 0.13,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 13959.48,
+          "previous_close": 13971.89,
+          "change": -12.41,
+          "change_percent": -0.09,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5904.32,
+          "previous_close": 5913.28,
+          "change": -8.96,
+          "change_percent": -0.15,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10044.7,
+          "previous_close": 10048.4,
+          "change": -3.7,
+          "change_percent": -0.04,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25127.46,
+          "previous_close": 25128.46,
+          "change": -1.0,
+          "change_percent": -0.0,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-08T08:05:10.574568",
+          "date": "2026-01-08"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-09",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49504.07,
+          "previous_close": 49234.81,
+          "change": 269.26,
+          "change_percent": 0.55,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6966.28,
+          "previous_close": 6927.83,
+          "change": 38.45,
+          "change_percent": 0.56,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23671.35,
+          "previous_close": 23496.21,
+          "change": 175.14,
+          "change_percent": 0.75,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 51939.89,
+          "previous_close": 51367.98,
+          "change": 571.91,
+          "change_percent": 1.11,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26231.79,
+          "previous_close": 26272.54,
+          "change": -40.75,
+          "change_percent": -0.16,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4120.43,
+          "previous_close": 4086.76,
+          "change": 33.66,
+          "change_percent": 0.82,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14120.15,
+          "previous_close": 13917.78,
+          "change": 202.37,
+          "change_percent": 1.45,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5997.47,
+          "previous_close": 5916.48,
+          "change": 80.99,
+          "change_percent": 1.37,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10124.6,
+          "previous_close": 10044.7,
+          "change": 79.9,
+          "change_percent": 0.8,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25261.64,
+          "previous_close": 25124.02,
+          "change": 137.62,
+          "change_percent": 0.55,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-09T08:05:10.574568",
+          "date": "2026-01-09"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-10",
+      "has_data": false,
+      "us_market": [],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 0
+    },
+    {
+      "date": "2026-01-11",
+      "has_data": false,
+      "us_market": [],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 0
+    },
+    {
+      "date": "2026-01-12",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49590.2,
+          "previous_close": 49499.67,
+          "change": 90.53,
+          "change_percent": 0.18,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6977.27,
+          "previous_close": 6944.12,
+          "change": 33.15,
+          "change_percent": 0.48,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23733.9,
+          "previous_close": 23576.88,
+          "change": 157.02,
+          "change_percent": 0.67,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53549.16,
+          "previous_close": 52808.29,
+          "change": 740.87,
+          "change_percent": 1.4,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26608.48,
+          "previous_close": 26376.84,
+          "change": 231.64,
+          "change_percent": 0.88,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4165.29,
+          "previous_close": 4134.89,
+          "change": 30.39,
+          "change_percent": 0.74,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14366.91,
+          "previous_close": 14186.86,
+          "change": 180.05,
+          "change_percent": 1.27,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 6016.3,
+          "previous_close": 5995.21,
+          "change": 21.09,
+          "change_percent": 0.35,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10140.7,
+          "previous_close": 10124.5,
+          "change": 16.2,
+          "change_percent": 0.16,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25405.34,
+          "previous_close": 25248.37,
+          "change": 156.97,
+          "change_percent": 0.62,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-12T08:05:10.574568",
+          "date": "2026-01-12"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-13",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49191.99,
+          "previous_close": 49616.95,
+          "change": -424.96,
+          "change_percent": -0.86,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6963.74,
+          "previous_close": 6977.41,
+          "change": -13.67,
+          "change_percent": -0.2,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23709.87,
+          "previous_close": 23735.12,
+          "change": -25.25,
+          "change_percent": -0.11,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53549.16,
+          "previous_close": 52808.29,
+          "change": 740.87,
+          "change_percent": 1.4,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26848.47,
+          "previous_close": 26958.52,
+          "change": -110.05,
+          "change_percent": -0.41,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4138.76,
+          "previous_close": 4169.7,
+          "change": -30.95,
+          "change_percent": -0.74,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14169.4,
+          "previous_close": 14397.68,
+          "change": -228.28,
+          "change_percent": -1.59,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 6029.83,
+          "previous_close": 6022.16,
+          "change": 7.67,
+          "change_percent": 0.13,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10137.4,
+          "previous_close": 10140.7,
+          "change": -3.3,
+          "change_percent": -0.03,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25420.66,
+          "previous_close": 25408.37,
+          "change": 12.29,
+          "change_percent": 0.05,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-13T08:05:10.574568",
+          "date": "2026-01-13"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-14",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49149.63,
+          "previous_close": 49088.25,
+          "change": 61.38,
+          "change_percent": 0.13,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6926.6,
+          "previous_close": 6937.41,
+          "change": -10.81,
+          "change_percent": -0.16,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23471.75,
+          "previous_close": 23563.92,
+          "change": -92.17,
+          "change_percent": -0.39,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 54341.23,
+          "previous_close": 53827.24,
+          "change": 513.99,
+          "change_percent": 0.95,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26999.81,
+          "previous_close": 26971.97,
+          "change": 27.84,
+          "change_percent": 0.1,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4126.09,
+          "previous_close": 4138.65,
+          "change": -12.55,
+          "change_percent": -0.3,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14248.6,
+          "previous_close": 14194.11,
+          "change": 54.49,
+          "change_percent": 0.38,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 6005.05,
+          "previous_close": 6030.9,
+          "change": -25.85,
+          "change_percent": -0.43,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10184.4,
+          "previous_close": 10137.3,
+          "change": 47.1,
+          "change_percent": 0.46,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25286.24,
+          "previous_close": 25429.75,
+          "change": -143.51,
+          "change_percent": -0.56,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-14T08:05:10.574568",
+          "date": "2026-01-14"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-15",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49442.44,
+          "previous_close": 49201.1,
+          "change": 241.34,
+          "change_percent": 0.49,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6944.47,
+          "previous_close": 6969.46,
+          "change": -24.99,
+          "change_percent": -0.36,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23530.02,
+          "previous_close": 23693.97,
+          "change": -163.95,
+          "change_percent": -0.69,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 54110.5,
+          "previous_close": 54039.4,
+          "change": 71.1,
+          "change_percent": 0.13,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26923.62,
+          "previous_close": 26972.36,
+          "change": -48.74,
+          "change_percent": -0.18,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4112.6,
+          "previous_close": 4106.22,
+          "change": 6.38,
+          "change_percent": 0.16,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14306.73,
+          "previous_close": 14158.66,
+          "change": 148.07,
+          "change_percent": 1.05,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 6041.14,
+          "previous_close": 6006.03,
+          "change": 35.11,
+          "change_percent": 0.58,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10238.9,
+          "previous_close": 10184.4,
+          "change": 54.5,
+          "change_percent": 0.54,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25352.39,
+          "previous_close": 25275.83,
+          "change": 76.56,
+          "change_percent": 0.3,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-15T08:05:10.574568",
+          "date": "2026-01-15"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-16",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49359.33,
+          "previous_close": 49466.7,
+          "change": -107.37,
+          "change_percent": -0.22,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6940.01,
+          "previous_close": 6960.54,
+          "change": -20.53,
+          "change_percent": -0.29,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23515.39,
+          "previous_close": 23639.69,
+          "change": -124.3,
+          "change_percent": -0.53,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53936.17,
+          "previous_close": 54071.28,
+          "change": -135.11,
+          "change_percent": -0.25,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26844.96,
+          "previous_close": 27094.85,
+          "change": -249.89,
+          "change_percent": -0.92,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4101.91,
+          "previous_close": 4127.06,
+          "change": -25.15,
+          "change_percent": -0.61,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14281.08,
+          "previous_close": 14374.54,
+          "change": -93.46,
+          "change_percent": -0.65,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 6029.45,
+          "previous_close": 6039.76,
+          "change": -10.31,
+          "change_percent": -0.17,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10235.3,
+          "previous_close": 10238.9,
+          "change": -3.6,
+          "change_percent": -0.04,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 25297.13,
+          "previous_close": 25336.01,
+          "change": -38.88,
+          "change_percent": -0.15,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-16T08:05:10.574568",
+          "date": "2026-01-16"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-17",
+      "has_data": false,
+      "us_market": [],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 0
+    },
+    {
+      "date": "2026-01-18",
+      "has_data": true,
+      "us_market": [],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53583.57,
+          "previous_close": 53390.05,
+          "change": 193.52,
+          "change_percent": 0.36,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-18T08:05:10.574568",
+          "date": "2026-01-18"
+        }
+      ],
+      "europe_market": [],
+      "total_count": 1
+    },
+    {
+      "date": "2026-01-19",
+      "has_data": true,
+      "us_market": [],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53583.57,
+          "previous_close": 53390.05,
+          "change": 193.52,
+          "change_percent": 0.36,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26563.9,
+          "previous_close": 26641.6,
+          "change": -77.7,
+          "change_percent": -0.29,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4114.0,
+          "previous_close": 4090.72,
+          "change": 23.28,
+          "change_percent": 0.57,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14294.05,
+          "previous_close": 14221.93,
+          "change": 72.12,
+          "change_percent": 0.51,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5925.82,
+          "previous_close": 5974.89,
+          "change": -49.07,
+          "change_percent": -0.82,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10195.4,
+          "previous_close": 10235.3,
+          "change": -39.9,
+          "change_percent": -0.39,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24959.06,
+          "previous_close": 24940.47,
+          "change": 18.59,
+          "change_percent": 0.07,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-19T08:05:10.574568",
+          "date": "2026-01-19"
+        }
+      ],
+      "total_count": 7
+    },
+    {
+      "date": "2026-01-20",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 48488.59,
+          "previous_close": 49005.01,
+          "change": -516.42,
+          "change_percent": -1.05,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6796.86,
+          "previous_close": 6865.24,
+          "change": -68.38,
+          "change_percent": -1.0,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 22954.32,
+          "previous_close": 23142.69,
+          "change": -188.37,
+          "change_percent": -0.81,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 52991.1,
+          "previous_close": 53348.59,
+          "change": -357.49,
+          "change_percent": -0.67,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26487.51,
+          "previous_close": 26544.9,
+          "change": -57.39,
+          "change_percent": -0.22,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4113.65,
+          "previous_close": 4116.37,
+          "change": -2.72,
+          "change_percent": -0.07,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14155.63,
+          "previous_close": 14307.55,
+          "change": -151.92,
+          "change_percent": -1.06,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5892.08,
+          "previous_close": 5910.48,
+          "change": -18.4,
+          "change_percent": -0.31,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10126.8,
+          "previous_close": 10195.2,
+          "change": -68.4,
+          "change_percent": -0.67,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24703.12,
+          "previous_close": 24747.35,
+          "change": -44.23,
+          "change_percent": -0.18,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-20T08:05:10.574568",
+          "date": "2026-01-20"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-21",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49077.23,
+          "previous_close": 48546.03,
+          "change": 531.2,
+          "change_percent": 1.09,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6875.62,
+          "previous_close": 6810.71,
+          "change": 64.91,
+          "change_percent": 0.95,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23224.82,
+          "previous_close": 23017.68,
+          "change": 207.14,
+          "change_percent": 0.9,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 52774.64,
+          "previous_close": 52228.08,
+          "change": 546.56,
+          "change_percent": 1.05,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26585.06,
+          "previous_close": 26397.04,
+          "change": 188.02,
+          "change_percent": 0.71,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4116.94,
+          "previous_close": 4103.53,
+          "change": 13.41,
+          "change_percent": 0.33,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14255.13,
+          "previous_close": 14102.21,
+          "change": 152.92,
+          "change_percent": 1.08,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5882.88,
+          "previous_close": 5894.28,
+          "change": -11.4,
+          "change_percent": -0.19,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10138.1,
+          "previous_close": 10126.9,
+          "change": 11.2,
+          "change_percent": 0.11,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24560.98,
+          "previous_close": 24636.55,
+          "change": -75.57,
+          "change_percent": -0.31,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-21T08:05:10.574568",
+          "date": "2026-01-21"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-22",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49384.01,
+          "previous_close": 49201.81,
+          "change": 182.2,
+          "change_percent": 0.37,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6913.35,
+          "previous_close": 6914.44,
+          "change": -1.09,
+          "change_percent": -0.02,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23436.02,
+          "previous_close": 23440.71,
+          "change": -4.69,
+          "change_percent": -0.02,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53688.89,
+          "previous_close": 53327.39,
+          "change": 361.5,
+          "change_percent": 0.68,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26629.96,
+          "previous_close": 26750.51,
+          "change": -120.55,
+          "change_percent": -0.45,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4122.58,
+          "previous_close": 4126.07,
+          "change": -3.5,
+          "change_percent": -0.08,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14327.04,
+          "previous_close": 14313.63,
+          "change": 13.41,
+          "change_percent": 0.09,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5956.17,
+          "previous_close": 5902.69,
+          "change": 53.48,
+          "change_percent": 0.91,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10150.1,
+          "previous_close": 10138.1,
+          "change": 12.0,
+          "change_percent": 0.12,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24856.47,
+          "previous_close": 24877.63,
+          "change": -21.16,
+          "change_percent": -0.09,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-22T08:05:10.574568",
+          "date": "2026-01-22"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-23",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49098.71,
+          "previous_close": 49264.54,
+          "change": -165.83,
+          "change_percent": -0.34,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6915.61,
+          "previous_close": 6907.85,
+          "change": 7.76,
+          "change_percent": 0.11,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23501.24,
+          "previous_close": 23440.92,
+          "change": 60.32,
+          "change_percent": 0.26,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 53846.87,
+          "previous_close": 53898.45,
+          "change": -51.58,
+          "change_percent": -0.1,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26749.51,
+          "previous_close": 26861.36,
+          "change": -111.85,
+          "change_percent": -0.42,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4136.16,
+          "previous_close": 4130.11,
+          "change": 6.06,
+          "change_percent": 0.15,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14439.66,
+          "previous_close": 14349.01,
+          "change": 90.65,
+          "change_percent": 0.63,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 5948.2,
+          "previous_close": 5947.63,
+          "change": 0.57,
+          "change_percent": 0.01,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10143.4,
+          "previous_close": 10150.1,
+          "change": -6.7,
+          "change_percent": -0.07,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24900.71,
+          "previous_close": 24819.94,
+          "change": 80.77,
+          "change_percent": 0.33,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-23T08:05:10.574568",
+          "date": "2026-01-23"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-01-24",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 49098.71,
+          "previous_close": 49264.54,
+          "change": -165.83,
+          "change_percent": -0.34,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-24T08:05:10.574568",
+          "date": "2026-01-24"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 6915.61,
+          "previous_close": 6907.85,
+          "change": 7.76,
+          "change_percent": 0.11,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-24T08:05:10.574568",
+          "date": "2026-01-24"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 23501.24,
+          "previous_close": 23440.92,
+          "change": 60.33,
+          "change_percent": 0.26,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-24T08:05:10.574568",
+          "date": "2026-01-24"
+        }
+      ],
+      "asia_market": [],
+      "europe_market": [],
+      "total_count": 3
+    },
+    {
+      "date": "2026-01-25",
+      "has_data": true,
+      "us_market": [],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 52885.25,
+          "previous_close": 53023.28,
+          "change": -138.03,
+          "change_percent": -0.26,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-25T08:05:10.574568",
+          "date": "2026-01-25"
+        }
+      ],
+      "europe_market": [],
+      "total_count": 1
+    },
+    {
+      "date": "2026-01-26",
+      "has_data": true,
+      "us_market": [],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 52885.25,
+          "previous_close": 53023.28,
+          "change": -138.03,
+          "change_percent": -0.26,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-26T08:05:10.574568",
+          "date": "2026-01-26"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 26747.92,
+          "previous_close": 26844.04,
+          "change": -96.12,
+          "change_percent": -0.36,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-26T08:05:10.574568",
+          "date": "2026-01-26"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4132.6,
+          "previous_close": 4144.78,
+          "change": -12.17,
+          "change_percent": -0.29,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-26T08:05:10.574568",
+          "date": "2026-01-26"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 14316.64,
+          "previous_close": 14492.42,
+          "change": -175.79,
+          "change_percent": -1.21,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-01-26T08:05:10.574568",
+          "date": "2026-01-26"
+        }
+      ],
+      "europe_market": [],
+      "total_count": 4
+    }
+  ]
+}
