@@ -155,44 +155,65 @@ def generate_filename(data_dir, date):
     filename = f"{date}_{file_number}.json"
     return os.path.join(data_dir, filename)
 
-# 5일 이상 지난 파일 삭제
+# 5일 이상 지난 파일 삭제 (뉴스 파일만)
 def delete_old_files(data_dir, days=5):
-    """지정된 일수 이상 지난 파일 삭제"""
+    """지정된 일수 이상 지난 뉴스 파일만 삭제 (다른 workflow의 파일은 보호)"""
     try:
         if not os.path.exists(data_dir):
             return
         
         # 현재 날짜
         today = datetime.now()
+        today_str = today.strftime('%Y-%m-%d')
         cutoff_date = today - timedelta(days=days)
         
-        # data 폴더의 모든 JSON 파일 확인
-        pattern = os.path.join(data_dir, "*.json")
+        # 뉴스 파일 패턴만 확인 (YYYY-MM-DD_NN.json 형식)
+        pattern = os.path.join(data_dir, "????-??-??_??.json")
         files = glob.glob(pattern)
         
         deleted_count = 0
         for filepath in files:
             try:
-                # 파일명에서 날짜 추출 (YYYY-MM-DD_NN.json 형식)
                 filename = os.path.basename(filepath)
-                date_str = filename.split('_')[0]
+                
+                # 파일명 형식 확인 (YYYY-MM-DD_NN.json)
+                if not filename.count('_') == 1:
+                    continue
+                
+                parts = filename.replace('.json', '').split('_')
+                if len(parts) != 2:
+                    continue
+                
+                date_str = parts[0]
+                num_str = parts[1]
+                
+                # 날짜 형식 확인
+                if not num_str.isdigit():
+                    continue
+                
+                # 오늘 날짜의 파일은 삭제하지 않음
+                if date_str == today_str:
+                    continue
                 
                 # 날짜 파싱
                 file_date = datetime.strptime(date_str, '%Y-%m-%d')
                 
-                # 5일 이상 지난 파일 삭제
+                # 5일 이상 지난 파일만 삭제
                 if file_date < cutoff_date:
                     os.remove(filepath)
                     deleted_count += 1
-                    print(f"🗑️ 오래된 파일 삭제: {filename}")
+                    print(f"🗑️ 오래된 뉴스 파일 삭제: {filename}")
+            except (ValueError, IndexError) as e:
+                # 날짜 파싱 실패 또는 형식 오류 시 스킵 (다른 workflow의 파일일 수 있음)
+                continue
             except Exception as e:
-                # 날짜 파싱 실패 시 스킵
+                # 기타 오류 시 스킵
                 continue
         
         if deleted_count > 0:
-            print(f"✅ 총 {deleted_count}개의 오래된 파일을 삭제했습니다.")
+            print(f"✅ 총 {deleted_count}개의 오래된 뉴스 파일을 삭제했습니다.")
         else:
-            print(f"ℹ️ 삭제할 오래된 파일이 없습니다.")
+            print(f"ℹ️ 삭제할 오래된 뉴스 파일이 없습니다.")
             
     except Exception as e:
         print(f"⚠️ 오래된 파일 삭제 중 오류 발생: {e}")
