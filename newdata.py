@@ -9,8 +9,36 @@ import json
 import os
 import hashlib
 import glob
+from openai import OpenAI
+from supabase import create_client, Client
+from dotenv import load_dotenv
 
 URL = "https://finance.naver.com/news/mainnews.naver"
+
+# 환경 변수 로드
+load_dotenv()
+
+# OpenAI 클라이언트 초기화
+openai_client = None
+if os.getenv("OPENAI_API_KEY"):
+    openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# Supabase 클라이언트 초기화
+supabase_client: Client = None
+supabase_url = os.getenv("SUPABASE_URL")
+supabase_key = os.getenv("SUPABASE_KEY")
+
+if supabase_url and supabase_key:
+    try:
+        supabase_client = create_client(supabase_url, supabase_key)
+        print(f"✅ Supabase 클라이언트 초기화 완료: {supabase_url[:30]}...")
+    except Exception as e:
+        print(f"⚠️ Supabase 클라이언트 초기화 실패: {e}")
+else:
+    if not supabase_url:
+        print("⚠️ SUPABASE_URL 환경 변수가 설정되지 않았습니다.")
+    if not supabase_key:
+        print("⚠️ SUPABASE_KEY 환경 변수가 설정되지 않았습니다.")
 
 user_agents = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
@@ -53,19 +81,6 @@ def calculate_data_hash(data):
     data_str = json.dumps(data, sort_keys=True, ensure_ascii=False)
     return hashlib.md5(data_str.encode('utf-8')).hexdigest()
 
-# 기존 데이터 로드
-def load_existing_data(filepath):
-    """기존 JSON 파일에서 데이터를 로드"""
-    if os.path.exists(filepath):
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return data
-        except Exception as e:
-            print(f"⚠️ 기존 데이터 로드 실패: {e}")
-            return None
-    return None
-
 # 데이터 저장
 def save_data_to_json(data, filepath):
     """데이터를 JSON 파일로 저장"""
@@ -91,32 +106,6 @@ def save_data_to_json(data, filepath):
     except Exception as e:
         print(f"❌ 데이터 저장 실패: {e}")
         return False
-
-# 데이터 중복 체크
-def is_data_duplicate(new_data, existing_data):
-    """새 데이터와 기존 데이터가 동일한지 확인"""
-    if not existing_data:
-        return False
-    
-    # 해시값 비교
-    new_hash = calculate_data_hash(new_data)
-    existing_hash = existing_data.get("data_hash", "")
-    
-    if new_hash == existing_hash:
-        return True
-    
-    # 해시값이 없거나 다른 경우, 실제 데이터 비교
-    new_news = new_data
-    existing_news = existing_data.get("news", [])
-    
-    if len(new_news) != len(existing_news):
-        return False
-    
-    # 제목 기준으로 비교
-    new_titles = {item.get("제목", "") for item in new_news}
-    existing_titles = {item.get("제목", "") for item in existing_news}
-    
-    return new_titles == existing_titles
 
 # 오늘 날짜의 다음 파일 번호 찾기
 def get_next_file_number(data_dir, date):
@@ -628,6 +617,189 @@ def fetch_all_pages_news(date=None):
     
     return all_news_items
 
+# 캐시를 위한 전역 변수
+_summary_and_stocks_cache = {}
+
+# OpenAI를 사용한 뉴스 제목들 요약 및 추천 종목 추출 (하나의 API 요청)
+def get_summary_and_stocks_with_openai(titles: list) -> tuple[str, str]:
+    """OpenAI를 사용하여 뉴스 제목들을 요약하고 추천 종목 10개를 추출 (하나의 API 요청, 캐싱 적용)"""
+    if not openai_client:
+        print("⚠️ OpenAI API 키가 설정되지 않았습니다.")
+        # 제목들을 간단히 결합 (500자 제한)
+        combined = " | ".join(titles)
+        summary = combined[:500] if len(combined) > 500 else combined
+        return summary, ""
+    
+    if not titles:
+        return "", ""
+    
+    # 캐시 키 생성 (제목들의 해시값)
+    cache_key = hashlib.md5("|".join(titles[:10]).encode('utf-8')).hexdigest()
+    
+    # 캐시에 있으면 반환
+    if cache_key in _summary_and_stocks_cache:
+        print("📋 캐시에서 요약 및 추천 종목 데이터를 가져옵니다.")
+        cached_result = _summary_and_stocks_cache[cache_key]
+        return cached_result["summary"], cached_result["topstock"]
+    
+    try:
+        # 모든 제목을 하나의 문자열로 결합
+        titles_text = "\n".join([f"- {title}" for title in titles[:50]])  # 최대 50개까지만
+        if len(titles) > 50:
+            titles_text += f"\n... 외 {len(titles) - 50}개 뉴스"
+        
+        response = openai_client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "당신은 뉴스 분석 및 주식 투자 전문가입니다. 주어진 뉴스 제목들을 분석하여 다음 두 가지를 수행해주세요:\n1. 뉴스 제목들을 종합하여 500자 이내로 요약\n2. 뉴스 내용을 바탕으로 투자 가치가 높은 한국 주식 종목 10개를 추천\n\n응답 형식:\n[요약]\n(여기에 500자 이내 요약)\n\n[추천종목]\n종목1, 종목2, 종목3, 종목4, 종목5, 종목6, 종목7, 종목8, 종목9, 종목10"
+                },
+                {
+                    "role": "user",
+                    "content": f"다음 뉴스 제목들을 분석해주세요:\n\n{titles_text}\n\n위 뉴스들을 바탕으로:\n1. 500자 이내로 요약\n2. 투자 가치가 높은 한국 주식 종목 10개 추천 (종목명 또는 종목코드 6자리, 쉼표로 구분)\n\n[요약]과 [추천종목] 형식으로 답변해주세요."
+                }
+            ],
+            max_tokens=500,
+            temperature=0.7
+        )
+        
+        result_text = response.choices[0].message.content.strip()
+        
+        # 결과 파싱
+        summary = ""
+        topstock = ""
+        
+        # [요약] 섹션 추출
+        if "[요약]" in result_text:
+            summary_part = result_text.split("[요약]")[1]
+            if "[추천종목]" in summary_part:
+                summary = summary_part.split("[추천종목]")[0].strip()
+            else:
+                summary = summary_part.strip()
+        else:
+            # [요약] 태그가 없으면 첫 부분을 요약으로 간주
+            if "[추천종목]" in result_text:
+                summary = result_text.split("[추천종목]")[0].strip()
+            else:
+                summary = result_text[:500]
+        
+        # [추천종목] 섹션 추출
+        if "[추천종목]" in result_text:
+            topstock_part = result_text.split("[추천종목]")[1].strip()
+            # 첫 줄만 가져오기 (추가 설명 제거)
+            topstock = topstock_part.split("\n")[0].strip()
+        else:
+            # [추천종목] 태그가 없으면 마지막 부분을 추천 종목으로 간주
+            lines = result_text.split("\n")
+            for line in reversed(lines):
+                if "," in line and len(line.strip()) > 10:
+                    topstock = line.strip()
+                    break
+        
+        # 500자 제한
+        if len(summary) > 500:
+            summary = summary[:500]
+        
+        # 255자 제한 (VARCHAR(255))
+        if len(topstock) > 255:
+            topstock = topstock[:255]
+        
+        # 캐시에 저장
+        _summary_and_stocks_cache[cache_key] = {
+            "summary": summary,
+            "topstock": topstock
+        }
+        print("💾 요약 및 추천 종목 데이터를 캐시에 저장했습니다.")
+        
+        return summary, topstock
+        
+    except Exception as e:
+        print(f"⚠️ OpenAI 요약 및 추천 종목 추출 실패: {e}")
+        import traceback
+        traceback.print_exc()
+        
+        # 실패 시 기본값 반환
+        combined = " | ".join(titles[:10])  # 최대 10개만
+        if len(titles) > 10:
+            combined += f" ... 외 {len(titles) - 10}개"
+        summary = combined[:500] if len(combined) > 500 else combined
+        topstock = ""
+        
+        # 실패한 결과도 캐시에 저장 (재시도 방지)
+        _summary_and_stocks_cache[cache_key] = {
+            "summary": summary,
+            "topstock": topstock
+        }
+        
+        return summary, topstock
+
+# Supabase에 뉴스 데이터 저장
+def save_news_to_supabase(news_list: list, filename_without_ext: str) -> bool:
+    """뉴스 데이터를 Supabase daily_new 테이블에 저장 (1개의 레코드로 저장)"""
+    if not supabase_client:
+        print("⚠️ Supabase 연결 정보가 설정되지 않았습니다.")
+        return False
+    
+    if not news_list:
+        print("⚠️ 저장할 뉴스 데이터가 없습니다.")
+        return False
+    
+    try:
+        print(f"\n💾 Supabase에 {len(news_list)}개의 뉴스 데이터를 1개 레코드로 저장 중...")
+        
+        # 모든 뉴스 제목 추출
+        titles = [news.get("제목", "") for news in news_list if news.get("제목")]
+        
+        if not titles:
+            print("⚠️ 제목이 있는 뉴스가 없습니다.")
+            return False
+        
+        print(f"📝 총 {len(titles)}개의 뉴스 제목을 분석 중... (요약 + 추천 종목)")
+        
+        # OpenAI로 모든 제목들을 종합하여 요약 및 추천 종목 추출 (하나의 API 요청)
+        summary, topstock = get_summary_and_stocks_with_openai(titles)
+        
+        print(f"✅ 요약 완료: {len(summary)}자")
+        if topstock:
+            print(f"✅ 추천 종목 추출 완료: {topstock}")
+        else:
+            print(f"⚠️ 추천 종목 추출 실패")
+        
+        # 저장할 데이터 준비
+        insert_data = {
+            "content": news_list,  # 전체 뉴스 리스트를 JSONB로 저장
+            "summary": summary,  # 모든 제목을 요약한 결과 (500자)
+            "cont_date": filename_without_ext,  # JSON 파일명 (예: "2026-01-28_01")
+            "topstock": topstock  # 추천 종목 10개
+        }
+        
+        print(f"📤 저장 데이터 준비 완료:")
+        print(f"   - content: {len(news_list)}개 뉴스")
+        print(f"   - summary: {len(summary)}자")
+        print(f"   - cont_date: {filename_without_ext}")
+        print(f"   - topstock: {topstock}")
+        
+        # Supabase에 데이터 삽입 (1개의 레코드)
+        result = supabase_client.table("daily_new").insert(insert_data).execute()
+        
+        # 결과 확인
+        if result.data:
+            print(f"✅ Supabase 저장 완료: 1개 레코드 저장 성공")
+            print(f"   저장된 ID: {result.data[0].get('id', 'N/A')}")
+            return True
+        else:
+            print(f"⚠️ Supabase 저장 결과가 비어있습니다.")
+            return False
+        
+    except Exception as e:
+        print(f"❌ Supabase 저장 중 오류 발생: {e}")
+        print(f"   오류 타입: {type(e).__name__}")
+        import traceback
+        print("\n상세 오류 정보:")
+        traceback.print_exc()
+        return False
+
 # 메인 실행 함수
 def main():
     """메인 실행 함수"""
@@ -648,30 +820,22 @@ def main():
     news_list = fetch_all_pages_news(date=today_date)
     
     if news_list:
-        # 오늘 날짜의 모든 파일 확인하여 중복 체크
-        pattern = os.path.join(data_dir, f"{today_date}_*.json")
-        existing_files = sorted(glob.glob(pattern), reverse=True)
-        
-        # 가장 최근 파일과 중복 체크
-        existing_data = None
-        if existing_files:
-            existing_data = load_existing_data(existing_files[0])
-        
-        # 중복 체크
-        if existing_data and is_data_duplicate(news_list, existing_data):
-            print(f"ℹ️ 기존 데이터와 동일합니다. 다시 로드하지 않습니다.")
-            print(f"📊 기존 데이터: {len(existing_data.get('news', []))}개 뉴스")
-            return
-        
         # 새 파일명 생성 (날짜_번호 형식)
         filepath = generate_filename(data_dir, today_date)
+        filename_without_ext = os.path.basename(filepath).replace('.json', '')  # 확장자 제거
         print(f"📝 파일명: {os.path.basename(filepath)}")
         
-        # 데이터 저장
+        # JSON 파일로 데이터 저장
         if save_data_to_json(news_list, filepath):
-            print(f"✅ {len(news_list)}개의 뉴스 데이터를 저장했습니다.")
+            print(f"✅ {len(news_list)}개의 뉴스 데이터를 JSON 파일로 저장했습니다.")
         else:
-            print(f"❌ 데이터 저장에 실패했습니다.")
+            print(f"❌ JSON 파일 저장에 실패했습니다.")
+        
+        # Supabase에 데이터 저장 (파일명 형식으로 저장: 예: "2026-01-28_01")
+        if save_news_to_supabase(news_list, filename_without_ext):
+            print(f"✅ {len(news_list)}개의 뉴스 데이터를 Supabase에 저장했습니다.")
+        else:
+            print(f"⚠️ Supabase 저장을 건너뜁니다.")
     else:
         print("⚠️ 뉴스 데이터를 가져올 수 없습니다.")
     
