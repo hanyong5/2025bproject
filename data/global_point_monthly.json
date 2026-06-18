@@ -1,144 +1,13 @@
 {
   "collection_info": {
-    "start_date": "2026-05-18",
-    "end_date": "2026-06-17",
+    "start_date": "2026-05-19",
+    "end_date": "2026-06-18",
     "total_days": 31,
     "success_days": 27,
     "fail_days": 4,
-    "collected_at": "2026-06-17T03:34:48.438777"
+    "collected_at": "2026-06-18T03:26:57.363591"
   },
   "data": [
-    {
-      "date": "2026-05-18",
-      "has_data": true,
-      "us_market": [
-        {
-          "symbol": "dow",
-          "name": "다우존스",
-          "current_price": 49686.12,
-          "previous_close": 49481.04,
-          "change": 205.08,
-          "change_percent": 0.41,
-          "currency": "USD",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "sp500",
-          "name": "S&P 500",
-          "current_price": 7403.05,
-          "previous_close": 7415.07,
-          "change": -12.02,
-          "change_percent": -0.16,
-          "currency": "USD",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "nasdaq",
-          "name": "나스닥",
-          "current_price": 26090.73,
-          "previous_close": 26289.49,
-          "change": -198.76,
-          "change_percent": -0.76,
-          "currency": "USD",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        }
-      ],
-      "asia_market": [
-        {
-          "symbol": "nikkei",
-          "name": "닛케이225",
-          "current_price": 60815.95,
-          "previous_close": 61299.87,
-          "change": -483.92,
-          "change_percent": -0.79,
-          "currency": "JPY",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "hangseng",
-          "name": "항셍",
-          "current_price": 25675.18,
-          "previous_close": 25838.96,
-          "change": -163.78,
-          "change_percent": -0.63,
-          "currency": "HKD",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "shanghai",
-          "name": "상해종합",
-          "current_price": 4131.53,
-          "previous_close": 4120.14,
-          "change": 11.39,
-          "change_percent": 0.28,
-          "currency": "CNY",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "shenzhen",
-          "name": "심천성분",
-          "current_price": 15530.23,
-          "previous_close": 15465.3,
-          "change": 64.93,
-          "change_percent": 0.42,
-          "currency": "CNY",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        }
-      ],
-      "europe_market": [
-        {
-          "symbol": "stoxx50",
-          "name": "STOXX 50",
-          "current_price": 5849.0,
-          "previous_close": 5797.66,
-          "change": 51.34,
-          "change_percent": 0.89,
-          "currency": "EUR",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "ftse",
-          "name": "FTSE 100",
-          "current_price": 10323.8,
-          "previous_close": 10194.8,
-          "change": 129.0,
-          "change_percent": 1.27,
-          "currency": "GBP",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        },
-        {
-          "symbol": "dax",
-          "name": "DAX",
-          "current_price": 24307.92,
-          "previous_close": 23833.11,
-          "change": 474.81,
-          "change_percent": 1.99,
-          "currency": "EUR",
-          "market_state": "CLOSED",
-          "timestamp": "2026-05-18T03:33:56.362600",
-          "date": "2026-05-18"
-        }
-      ],
-      "total_count": 10
-    },
     {
       "date": "2026-05-19",
       "has_data": true,
@@ -152,7 +21,7 @@
           "change_percent": -0.67,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -164,7 +33,7 @@
           "change_percent": -0.3,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -176,7 +45,7 @@
           "change_percent": -0.2,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         }
       ],
@@ -190,7 +59,7 @@
           "change_percent": -1.07,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -202,7 +71,7 @@
           "change_percent": 0.41,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -214,7 +83,7 @@
           "change_percent": 1.13,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -226,7 +95,7 @@
           "change_percent": 0.65,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         }
       ],
@@ -240,7 +109,7 @@
           "change_percent": -0.11,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -252,7 +121,7 @@
           "change_percent": 0.07,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         },
         {
@@ -264,7 +133,7 @@
           "change_percent": 0.12,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-19T03:33:56.362600",
+          "timestamp": "2026-05-19T03:26:12.300417",
           "date": "2026-05-19"
         }
       ],
@@ -283,7 +152,7 @@
           "change_percent": 1.34,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -295,7 +164,7 @@
           "change_percent": 0.87,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -307,7 +176,7 @@
           "change_percent": 1.07,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         }
       ],
@@ -321,7 +190,7 @@
           "change_percent": -1.26,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -333,7 +202,7 @@
           "change_percent": -0.23,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -345,7 +214,7 @@
           "change_percent": 0.23,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -357,7 +226,7 @@
           "change_percent": 0.53,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         }
       ],
@@ -371,7 +240,7 @@
           "change_percent": 2.05,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -383,7 +252,7 @@
           "change_percent": 0.98,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         },
         {
@@ -395,7 +264,7 @@
           "change_percent": 1.61,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-20T03:33:56.362600",
+          "timestamp": "2026-05-20T03:26:12.300417",
           "date": "2026-05-20"
         }
       ],
@@ -414,7 +283,7 @@
           "change_percent": 0.6,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -426,7 +295,7 @@
           "change_percent": 0.47,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -438,7 +307,7 @@
           "change_percent": 0.57,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         }
       ],
@@ -452,7 +321,7 @@
           "change_percent": 2.17,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -464,7 +333,7 @@
           "change_percent": -1.73,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -476,7 +345,7 @@
           "change_percent": -2.33,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -488,7 +357,7 @@
           "change_percent": -2.93,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         }
       ],
@@ -502,7 +371,7 @@
           "change_percent": -0.11,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -514,7 +383,7 @@
           "change_percent": 0.11,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         },
         {
@@ -526,7 +395,7 @@
           "change_percent": -0.35,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-21T03:33:56.362600",
+          "timestamp": "2026-05-21T03:26:12.300417",
           "date": "2026-05-21"
         }
       ],
@@ -545,7 +414,7 @@
           "change_percent": 0.29,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -557,7 +426,7 @@
           "change_percent": 0.06,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -569,7 +438,7 @@
           "change_percent": -0.14,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         }
       ],
@@ -583,7 +452,7 @@
           "change_percent": 2.3,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -595,7 +464,7 @@
           "change_percent": -0.14,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -607,7 +476,7 @@
           "change_percent": 0.41,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -619,7 +488,7 @@
           "change_percent": 1.4,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         }
       ],
@@ -633,7 +502,7 @@
           "change_percent": 0.57,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -645,7 +514,7 @@
           "change_percent": 0.22,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         },
         {
@@ -657,7 +526,7 @@
           "change_percent": 0.48,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-22T03:33:56.362600",
+          "timestamp": "2026-05-22T03:26:12.300417",
           "date": "2026-05-22"
         }
       ],
@@ -685,7 +554,7 @@
           "change_percent": 2.36,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-24T03:33:56.362600",
+          "timestamp": "2026-05-24T03:26:12.300417",
           "date": "2026-05-24"
         }
       ],
@@ -706,7 +575,7 @@
           "change_percent": 2.36,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-25T03:33:56.362600",
+          "timestamp": "2026-05-25T03:26:12.300417",
           "date": "2026-05-25"
         },
         {
@@ -718,7 +587,7 @@
           "change_percent": 0.64,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-25T03:33:56.362600",
+          "timestamp": "2026-05-25T03:26:12.300417",
           "date": "2026-05-25"
         },
         {
@@ -730,7 +599,7 @@
           "change_percent": 0.89,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-25T03:33:56.362600",
+          "timestamp": "2026-05-25T03:26:12.300417",
           "date": "2026-05-25"
         }
       ],
@@ -744,7 +613,7 @@
           "change_percent": 0.83,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-25T03:33:56.362600",
+          "timestamp": "2026-05-25T03:26:12.300417",
           "date": "2026-05-25"
         }
       ],
@@ -763,7 +632,7 @@
           "change_percent": -0.44,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -775,7 +644,7 @@
           "change_percent": 0.1,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -787,7 +656,7 @@
           "change_percent": 0.25,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         }
       ],
@@ -801,7 +670,7 @@
           "change_percent": -0.38,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -813,7 +682,7 @@
           "change_percent": -0.09,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -825,7 +694,7 @@
           "change_percent": 0.19,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -837,7 +706,7 @@
           "change_percent": 0.57,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         }
       ],
@@ -851,7 +720,7 @@
           "change_percent": -1.08,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -863,7 +732,7 @@
           "change_percent": 0.25,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         },
         {
@@ -875,7 +744,7 @@
           "change_percent": -0.69,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-26T03:33:56.362600",
+          "timestamp": "2026-05-26T03:26:12.300417",
           "date": "2026-05-26"
         }
       ],
@@ -894,7 +763,7 @@
           "change_percent": 0.31,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -906,7 +775,7 @@
           "change_percent": -0.08,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -918,7 +787,7 @@
           "change_percent": -0.08,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         }
       ],
@@ -932,7 +801,7 @@
           "change_percent": -1.18,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -944,7 +813,7 @@
           "change_percent": -1.1,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -956,7 +825,7 @@
           "change_percent": -1.09,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -968,7 +837,7 @@
           "change_percent": -0.83,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         }
       ],
@@ -982,7 +851,7 @@
           "change_percent": 0.01,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -994,7 +863,7 @@
           "change_percent": 0.13,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         },
         {
@@ -1006,7 +875,7 @@
           "change_percent": -0.58,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-27T03:33:56.362600",
+          "timestamp": "2026-05-27T03:26:12.300417",
           "date": "2026-05-27"
         }
       ],
@@ -1025,7 +894,7 @@
           "change_percent": 0.02,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1037,7 +906,7 @@
           "change_percent": 0.58,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1049,7 +918,7 @@
           "change_percent": 0.87,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         }
       ],
@@ -1063,7 +932,7 @@
           "change_percent": -0.12,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1075,7 +944,7 @@
           "change_percent": -0.89,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1087,7 +956,7 @@
           "change_percent": 0.45,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1099,7 +968,7 @@
           "change_percent": 1.09,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         }
       ],
@@ -1113,7 +982,7 @@
           "change_percent": -0.15,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1125,7 +994,7 @@
           "change_percent": -0.76,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         },
         {
@@ -1137,7 +1006,7 @@
           "change_percent": 0.03,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-28T03:33:56.362600",
+          "timestamp": "2026-05-28T03:26:12.300417",
           "date": "2026-05-28"
         }
       ],
@@ -1156,7 +1025,7 @@
           "change_percent": 0.51,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1168,7 +1037,7 @@
           "change_percent": 0.01,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1180,7 +1049,7 @@
           "change_percent": 0.04,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         }
       ],
@@ -1194,7 +1063,7 @@
           "change_percent": 1.84,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1206,7 +1075,7 @@
           "change_percent": 0.08,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1218,7 +1087,7 @@
           "change_percent": -1.02,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1230,7 +1099,7 @@
           "change_percent": -2.39,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         }
       ],
@@ -1244,7 +1113,7 @@
           "change_percent": -0.22,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1256,7 +1125,7 @@
           "change_percent": -0.16,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         },
         {
@@ -1268,7 +1137,7 @@
           "change_percent": -0.09,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-29T03:33:56.362600",
+          "timestamp": "2026-05-29T03:26:12.300417",
           "date": "2026-05-29"
         }
       ],
@@ -1296,7 +1165,7 @@
           "change_percent": 0.86,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-05-31T03:33:56.362600",
+          "timestamp": "2026-05-31T03:26:12.300417",
           "date": "2026-05-31"
         }
       ],
@@ -1316,7 +1185,7 @@
           "change_percent": -0.16,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1328,7 +1197,7 @@
           "change_percent": 0.23,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1340,7 +1209,7 @@
           "change_percent": 0.5,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         }
       ],
@@ -1354,7 +1223,7 @@
           "change_percent": 0.86,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1366,7 +1235,7 @@
           "change_percent": 0.87,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1378,7 +1247,7 @@
           "change_percent": -0.23,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1390,7 +1259,7 @@
           "change_percent": -1.67,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         }
       ],
@@ -1404,7 +1273,7 @@
           "change_percent": -0.31,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1416,7 +1285,7 @@
           "change_percent": -0.68,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         },
         {
@@ -1428,7 +1297,7 @@
           "change_percent": -0.32,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-01T03:33:56.362600",
+          "timestamp": "2026-06-01T03:26:12.300417",
           "date": "2026-06-01"
         }
       ],
@@ -1447,7 +1316,7 @@
           "change_percent": 0.78,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1459,7 +1328,7 @@
           "change_percent": 0.19,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1471,7 +1340,7 @@
           "change_percent": 0.24,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         }
       ],
@@ -1485,7 +1354,7 @@
           "change_percent": 0.16,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1497,7 +1366,7 @@
           "change_percent": 2.53,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1509,7 +1378,7 @@
           "change_percent": 0.34,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1521,7 +1390,7 @@
           "change_percent": 1.17,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         }
       ],
@@ -1535,7 +1404,7 @@
           "change_percent": 0.8,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1547,7 +1416,7 @@
           "change_percent": 0.34,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         },
         {
@@ -1559,7 +1428,7 @@
           "change_percent": -0.29,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-02T03:33:56.362600",
+          "timestamp": "2026-06-02T03:26:12.300417",
           "date": "2026-06-02"
         }
       ],
@@ -1578,7 +1447,7 @@
           "change_percent": -1.04,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1590,7 +1459,7 @@
           "change_percent": -0.68,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1602,7 +1471,7 @@
           "change_percent": -0.88,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         }
       ],
@@ -1616,7 +1485,7 @@
           "change_percent": 1.73,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1628,7 +1497,7 @@
           "change_percent": -1.23,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1640,7 +1509,7 @@
           "change_percent": 0.38,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1652,7 +1521,7 @@
           "change_percent": 0.37,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         }
       ],
@@ -1666,7 +1535,7 @@
           "change_percent": -0.85,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1678,7 +1547,7 @@
           "change_percent": -0.4,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         },
         {
@@ -1690,7 +1559,7 @@
           "change_percent": -0.47,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-03T03:33:56.362600",
+          "timestamp": "2026-06-03T03:26:12.300417",
           "date": "2026-06-03"
         }
       ],
@@ -1709,7 +1578,7 @@
           "change_percent": 1.13,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1721,7 +1590,7 @@
           "change_percent": 0.9,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1733,7 +1602,7 @@
           "change_percent": 0.95,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         }
       ],
@@ -1747,7 +1616,7 @@
           "change_percent": -0.57,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1759,7 +1628,7 @@
           "change_percent": -0.83,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1771,7 +1640,7 @@
           "change_percent": 0.1,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1783,7 +1652,7 @@
           "change_percent": 0.78,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         }
       ],
@@ -1797,7 +1666,7 @@
           "change_percent": 0.75,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1809,7 +1678,7 @@
           "change_percent": 0.27,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         },
         {
@@ -1821,7 +1690,7 @@
           "change_percent": 0.38,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-04T03:33:56.362600",
+          "timestamp": "2026-06-04T03:26:12.300417",
           "date": "2026-06-04"
         }
       ],
@@ -1840,7 +1709,7 @@
           "change_percent": -1.44,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1852,7 +1721,7 @@
           "change_percent": -2.04,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1864,7 +1733,7 @@
           "change_percent": -3.12,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         }
       ],
@@ -1878,7 +1747,7 @@
           "change_percent": -0.79,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1890,7 +1759,7 @@
           "change_percent": -0.89,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1902,7 +1771,7 @@
           "change_percent": -0.42,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1914,7 +1783,7 @@
           "change_percent": -1.8,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         }
       ],
@@ -1928,7 +1797,7 @@
           "change_percent": -0.74,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1940,7 +1809,7 @@
           "change_percent": 0.08,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         },
         {
@@ -1952,7 +1821,7 @@
           "change_percent": -0.49,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-05T03:33:56.362600",
+          "timestamp": "2026-06-05T03:26:12.300417",
           "date": "2026-06-05"
         }
       ],
@@ -1980,7 +1849,7 @@
           "change_percent": -2.92,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-07T03:33:56.362600",
+          "timestamp": "2026-06-07T03:26:12.300417",
           "date": "2026-06-07"
         }
       ],
@@ -2000,7 +1869,7 @@
           "change_percent": -0.41,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2012,7 +1881,7 @@
           "change_percent": -0.47,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2024,7 +1893,7 @@
           "change_percent": -0.52,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         }
       ],
@@ -2038,7 +1907,7 @@
           "change_percent": -2.92,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2050,7 +1919,7 @@
           "change_percent": 0.3,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2062,7 +1931,7 @@
           "change_percent": 0.52,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2074,7 +1943,7 @@
           "change_percent": -0.1,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         }
       ],
@@ -2088,7 +1957,7 @@
           "change_percent": 0.21,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2100,7 +1969,7 @@
           "change_percent": 0.04,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         },
         {
@@ -2112,7 +1981,7 @@
           "change_percent": 0.69,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-08T03:33:56.362600",
+          "timestamp": "2026-06-08T03:26:12.300417",
           "date": "2026-06-08"
         }
       ],
@@ -2131,7 +2000,7 @@
           "change_percent": 0.11,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2143,7 +2012,7 @@
           "change_percent": -0.7,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2155,7 +2024,7 @@
           "change_percent": -1.65,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         }
       ],
@@ -2169,7 +2038,7 @@
           "change_percent": 1.22,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2181,7 +2050,7 @@
           "change_percent": 0.06,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2193,7 +2062,7 @@
           "change_percent": 0.82,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2205,7 +2074,7 @@
           "change_percent": 1.84,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         }
       ],
@@ -2219,7 +2088,7 @@
           "change_percent": -0.15,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2231,7 +2100,7 @@
           "change_percent": -1.4,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         },
         {
@@ -2243,7 +2112,7 @@
           "change_percent": -0.64,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-09T03:33:56.362600",
+          "timestamp": "2026-06-09T03:26:12.300417",
           "date": "2026-06-09"
         }
       ],
@@ -2262,7 +2131,7 @@
           "change_percent": -1.66,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2274,7 +2143,7 @@
           "change_percent": -1.14,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2286,7 +2155,7 @@
           "change_percent": -1.34,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         }
       ],
@@ -2300,7 +2169,7 @@
           "change_percent": -1.19,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2312,7 +2181,7 @@
           "change_percent": -0.14,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2324,7 +2193,7 @@
           "change_percent": 0.2,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2336,7 +2205,7 @@
           "change_percent": -0.72,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         }
       ],
@@ -2350,7 +2219,7 @@
           "change_percent": -0.69,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2362,7 +2231,7 @@
           "change_percent": 0.27,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         },
         {
@@ -2374,7 +2243,7 @@
           "change_percent": -1.27,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-10T03:33:56.362600",
+          "timestamp": "2026-06-10T03:26:12.300417",
           "date": "2026-06-10"
         }
       ],
@@ -2393,7 +2262,7 @@
           "change_percent": 1.75,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2405,7 +2274,7 @@
           "change_percent": 1.46,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2417,7 +2286,7 @@
           "change_percent": 1.98,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         }
       ],
@@ -2431,7 +2300,7 @@
           "change_percent": 1.4,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2443,7 +2312,7 @@
           "change_percent": -0.54,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2455,7 +2324,7 @@
           "change_percent": 0.18,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2467,7 +2336,7 @@
           "change_percent": -0.25,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         }
       ],
@@ -2481,7 +2350,7 @@
           "change_percent": 0.7,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2493,7 +2362,7 @@
           "change_percent": 0.47,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         },
         {
@@ -2505,7 +2374,7 @@
           "change_percent": 0.02,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-11T03:33:56.362600",
+          "timestamp": "2026-06-11T03:26:12.300417",
           "date": "2026-06-11"
         }
       ],
@@ -2524,7 +2393,7 @@
           "change_percent": 0.1,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2536,7 +2405,7 @@
           "change_percent": 0.28,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2548,7 +2417,7 @@
           "change_percent": 0.41,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         }
       ],
@@ -2562,7 +2431,7 @@
           "change_percent": 1.29,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2574,7 +2443,7 @@
           "change_percent": 0.88,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2586,7 +2455,7 @@
           "change_percent": 0.34,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2598,7 +2467,7 @@
           "change_percent": -1.23,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         }
       ],
@@ -2612,7 +2481,7 @@
           "change_percent": 1.83,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2624,7 +2493,7 @@
           "change_percent": 1.64,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         },
         {
@@ -2636,7 +2505,7 @@
           "change_percent": 0.35,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-12T03:33:56.362600",
+          "timestamp": "2026-06-12T03:26:12.300417",
           "date": "2026-06-12"
         }
       ],
@@ -2664,7 +2533,7 @@
           "change_percent": 3.79,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-14T03:33:56.362600",
+          "timestamp": "2026-06-14T03:26:12.300417",
           "date": "2026-06-14"
         }
       ],
@@ -2684,7 +2553,7 @@
           "change_percent": 0.6,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2696,7 +2565,7 @@
           "change_percent": 0.5,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2708,7 +2577,7 @@
           "change_percent": 0.9,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         }
       ],
@@ -2722,7 +2591,7 @@
           "change_percent": 3.79,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2734,7 +2603,7 @@
           "change_percent": -0.63,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2746,7 +2615,7 @@
           "change_percent": 1.06,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2758,7 +2627,7 @@
           "change_percent": 2.49,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         }
       ],
@@ -2772,7 +2641,7 @@
           "change_percent": 0.07,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2784,7 +2653,7 @@
           "change_percent": -0.39,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         },
         {
@@ -2796,7 +2665,7 @@
           "change_percent": -0.7,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-15T03:33:56.362600",
+          "timestamp": "2026-06-15T03:26:12.300417",
           "date": "2026-06-15"
         }
       ],
@@ -2815,7 +2684,7 @@
           "change_percent": 0.56,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2827,7 +2696,7 @@
           "change_percent": -0.5,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2835,11 +2704,11 @@
           "name": "나스닥",
           "current_price": 26376.34,
           "previous_close": 26649.97,
-          "change": -273.62,
+          "change": -273.63,
           "change_percent": -1.03,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         }
       ],
@@ -2853,7 +2722,7 @@
           "change_percent": 0.17,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2865,7 +2734,7 @@
           "change_percent": -1.34,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2877,7 +2746,7 @@
           "change_percent": -0.06,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2889,7 +2758,7 @@
           "change_percent": 0.58,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         }
       ],
@@ -2903,7 +2772,7 @@
           "change_percent": 0.3,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2915,7 +2784,7 @@
           "change_percent": 0.6,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         },
         {
@@ -2927,7 +2796,7 @@
           "change_percent": -0.13,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-16T03:33:56.362600",
+          "timestamp": "2026-06-16T03:26:12.300417",
           "date": "2026-06-16"
         }
       ],
@@ -2940,37 +2809,37 @@
         {
           "symbol": "dow",
           "name": "다우존스",
-          "current_price": 51999.67,
-          "previous_close": 51712.63,
-          "change": 287.04,
-          "change_percent": 0.56,
+          "current_price": 51492.55,
+          "previous_close": 51937.56,
+          "change": -445.01,
+          "change_percent": -0.86,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "sp500",
           "name": "S&P 500",
-          "current_price": 7511.35,
-          "previous_close": 7548.78,
-          "change": -37.43,
-          "change_percent": -0.5,
+          "current_price": 7420.1,
+          "previous_close": 7524.5,
+          "change": -104.4,
+          "change_percent": -1.39,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "nasdaq",
           "name": "나스닥",
-          "current_price": 26376.34,
-          "previous_close": 26649.97,
-          "change": -273.62,
-          "change_percent": -1.03,
+          "current_price": 26021.66,
+          "previous_close": 26493.82,
+          "change": -472.17,
+          "change_percent": -1.78,
           "currency": "USD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         }
       ],
@@ -2978,49 +2847,49 @@
         {
           "symbol": "nikkei",
           "name": "닛케이225",
-          "current_price": 69926.08,
+          "current_price": 69902.25,
           "previous_close": 69005.88,
-          "change": 920.2,
-          "change_percent": 1.33,
+          "change": 896.37,
+          "change_percent": 1.3,
           "currency": "JPY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "hangseng",
           "name": "항셍",
-          "current_price": 24338.28,
+          "current_price": 24312.16,
           "previous_close": 24495.85,
-          "change": -157.57,
-          "change_percent": -0.64,
+          "change": -183.69,
+          "change_percent": -0.75,
           "currency": "HKD",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "shanghai",
           "name": "상해종합",
-          "current_price": 4080.55,
+          "current_price": 4108.08,
           "previous_close": 4074.29,
-          "change": 6.25,
-          "change_percent": 0.15,
+          "change": 33.79,
+          "change_percent": 0.83,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "shenzhen",
           "name": "심천성분",
-          "current_price": 15732.72,
+          "current_price": 15880.95,
           "previous_close": 15569.92,
-          "change": 162.8,
-          "change_percent": 1.05,
+          "change": 311.03,
+          "change_percent": 2.0,
           "currency": "CNY",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         }
       ],
@@ -3028,38 +2897,169 @@
         {
           "symbol": "stoxx50",
           "name": "STOXX 50",
-          "current_price": 6257.42,
-          "previous_close": 0.0,
-          "change": 6257.42,
-          "change_percent": 0,
+          "current_price": 6300.07,
+          "previous_close": 6257.97,
+          "change": 42.1,
+          "change_percent": 0.67,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "ftse",
           "name": "FTSE 100",
-          "current_price": 10494.21,
-          "previous_close": 10431.26,
-          "change": 62.95,
-          "change_percent": 0.6,
+          "current_price": 10508.6,
+          "previous_close": 10494.4,
+          "change": 14.2,
+          "change_percent": 0.14,
           "currency": "GBP",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
         },
         {
           "symbol": "dax",
           "name": "DAX",
-          "current_price": 24910.41,
-          "previous_close": 24942.73,
-          "change": -32.32,
-          "change_percent": -0.13,
+          "current_price": 24934.67,
+          "previous_close": 24816.96,
+          "change": 117.71,
+          "change_percent": 0.47,
           "currency": "EUR",
           "market_state": "CLOSED",
-          "timestamp": "2026-06-17T03:33:56.362600",
+          "timestamp": "2026-06-17T03:26:12.300417",
           "date": "2026-06-17"
+        }
+      ],
+      "total_count": 10
+    },
+    {
+      "date": "2026-06-18",
+      "has_data": true,
+      "us_market": [
+        {
+          "symbol": "dow",
+          "name": "다우존스",
+          "current_price": 51492.55,
+          "previous_close": 51937.56,
+          "change": -445.01,
+          "change_percent": -0.86,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "sp500",
+          "name": "S&P 500",
+          "current_price": 7420.1,
+          "previous_close": 7524.5,
+          "change": -104.4,
+          "change_percent": -1.39,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "nasdaq",
+          "name": "나스닥",
+          "current_price": 26021.66,
+          "previous_close": 26493.82,
+          "change": -472.17,
+          "change_percent": -1.78,
+          "currency": "USD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        }
+      ],
+      "asia_market": [
+        {
+          "symbol": "nikkei",
+          "name": "닛케이225",
+          "current_price": 71052.3,
+          "previous_close": 70163.71,
+          "change": 888.59,
+          "change_percent": 1.27,
+          "currency": "JPY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "hangseng",
+          "name": "항셍",
+          "current_price": 23848.18,
+          "previous_close": 24145.19,
+          "change": -297.01,
+          "change_percent": -1.23,
+          "currency": "HKD",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "shanghai",
+          "name": "상해종합",
+          "current_price": 4087.53,
+          "previous_close": 4094.23,
+          "change": -6.7,
+          "change_percent": -0.16,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "shenzhen",
+          "name": "심천성분",
+          "current_price": 15959.71,
+          "previous_close": 15826.79,
+          "change": 132.92,
+          "change_percent": 0.84,
+          "currency": "CNY",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        }
+      ],
+      "europe_market": [
+        {
+          "symbol": "stoxx50",
+          "name": "STOXX 50",
+          "current_price": 6300.07,
+          "previous_close": 0.0,
+          "change": 6300.07,
+          "change_percent": 0,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "ftse",
+          "name": "FTSE 100",
+          "current_price": 10508.61,
+          "previous_close": 10494.4,
+          "change": 14.21,
+          "change_percent": 0.14,
+          "currency": "GBP",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
+        },
+        {
+          "symbol": "dax",
+          "name": "DAX",
+          "current_price": 24934.67,
+          "previous_close": 24816.96,
+          "change": 117.71,
+          "change_percent": 0.47,
+          "currency": "EUR",
+          "market_state": "CLOSED",
+          "timestamp": "2026-06-18T03:26:12.300417",
+          "date": "2026-06-18"
         }
       ],
       "total_count": 10
